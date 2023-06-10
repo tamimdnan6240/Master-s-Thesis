@@ -18,10 +18,11 @@
 #### We trained and tested this U-Net model with two segmentation - datasets : 1)EdmCrack600 and 2)CRACKTREE260 
 
 ### EdmCrack600: 
-#### The raw images had noises, so we cropped the raw images and corresponding masks to 512 x 512 with Python programming. The Python file of center cropping is too large therefore, it is uploaded in drive: please see with this Link: 
-#### Then some raw images missed the cracks, therefore, we removed the missed images, actually, we have deleted them, but kept some of them to show why we excluded them. Finally, 470 images were selected from the 600 images for this research. The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: 
+#### The raw images had noises, so we cropped the raw images and corresponding masks to 512 x 512 with Python programming. The Python file of center cropping is too large therefore, it is uploaded in drive: please see with this Link: https://drive.google.com/file/d/1HtS6mLxokRazHLgm7LwMaiMR_3xe3bTL/view?usp=drive_link 
+
+#### Then some raw images missed the cracks, therefore, we removed the missed images, actually, we have deleted them, but kept some of them to show why we excluded them. Finally, 470 images were selected from the 600 images for this research. The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: https://drive.google.com/drive/folders/1rmVWDIfGBaBi8ZscDCZ9bjN28T7jGYfZ?usp=sharing 
 
 
 
 ### CRACKTREE260: 
-#### This dataset has 260 images but 206 images are the same sizes of 800 x 600. Therefore, our study just used 206 images for training and testing on the U-Net model to see the performances. No preprocessing was made here.  The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: 
+#### This dataset has 260 images but 206 images are the same sizes of 800 x 600. Therefore, our study just used 206 images for training and testing on the U-Net model to see the performances. No preprocessing was made here.  The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: https://drive.google.com/drive/folders/1QYw0jCF3SnEbc3qNbo9TotRy_eTg7CX6?usp=drive_link 
