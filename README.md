@@ -17,7 +17,9 @@
 
 #### We trained and tested this U-Net model with two segmentation - datasets : 1)EdmCrack600 and 2)CRACKTREE260 
 
-### EdmCrack600: The raw images had noises, so we cropped the raw images and corresponding masks to 512 x 512 with Python programming. Then some raw images missed the cracks, therefore, we removed the missed images, actually, we have deleted them, but kept some of them to show why we excluded them. Finally, 470 images were selected from the 600 images for this research. The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: 
+### EdmCrack600: 
+#### The raw images had noises, so we cropped the raw images and corresponding masks to 512 x 512 with Python programming. Then some raw images missed the cracks, therefore, we removed the missed images, actually, we have deleted them, but kept some of them to show why we excluded them. Finally, 470 images were selected from the 600 images for this research. The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: 
 
 
-### CRACKTREE260: This dataset has 260 images but 206 images are the same sizes of 800 x 600. Therefore, our study just used 206 images for training and testing on the U-Net model to see the performances. No preprocessing was made here.  The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: 
+### CRACKTREE260: 
+#### This dataset has 260 images but 206 images are the same sizes of 800 x 600. Therefore, our study just used 206 images for training and testing on the U-Net model to see the performances. No preprocessing was made here.  The dataset is uploaded in github, but if needed download from the given link of google drive. All output files are here: 
