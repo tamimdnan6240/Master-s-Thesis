@@ -11,7 +11,7 @@
 ### We also reduced some transverse cracks to make the dataset less imabalanced for the transferred-ResNet50 model.. Links: https://drive.google.com/drive/folders/1WDGmXSi1wGe4ewxHwLRdK0VvylIIDhD9?usp=sharing 
 
 
-## For Segmentation
+# For Segmentation
 
 #### We fine-tuned a U-Net model from Kaggle: https://www.kaggle.com/code/gokulkarthik/image-segmentation-with-unet-pytorch
 
