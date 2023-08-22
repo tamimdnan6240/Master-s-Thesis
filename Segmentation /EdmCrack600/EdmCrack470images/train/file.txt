@@ -1,1 +1,0 @@
-tranining images and their corresponding masks
