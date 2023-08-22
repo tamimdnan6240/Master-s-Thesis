@@ -1,0 +1,202 @@
+470
+470
+torch.Size([32, 3, 256, 256]) torch.Size([32, 1, 256, 256])
+  0%|          | 0/30 [00:00<?, ?it/s]
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 1/30 - Train loss: 0.7121 - Val loss: 0.6217
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 2/30 - Train loss: 0.6853 - Val loss: 0.6451
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 3/30 - Train loss: 0.6758 - Val loss: 0.6540
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 4/30 - Train loss: 0.6675 - Val loss: 0.6374
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 5/30 - Train loss: 0.6550 - Val loss: 0.6115
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 6/30 - Train loss: 0.6279 - Val loss: 0.5637
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 7/30 - Train loss: 0.5894 - Val loss: 0.5283
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 8/30 - Train loss: 0.5498 - Val loss: 0.4775
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 9/30 - Train loss: 0.5001 - Val loss: 0.4585
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 10/30 - Train loss: 0.4442 - Val loss: 0.3869
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 11/30 - Train loss: 0.3988 - Val loss: 0.3418
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 12/30 - Train loss: 0.3601 - Val loss: 0.3160
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 13/30 - Train loss: 0.3245 - Val loss: 0.2979
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 14/30 - Train loss: 0.2919 - Val loss: 0.2724
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 15/30 - Train loss: 0.2623 - Val loss: 0.2488
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 16/30 - Train loss: 0.2356 - Val loss: 0.2246
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 17/30 - Train loss: 0.2118 - Val loss: 0.1994
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 18/30 - Train loss: 0.1904 - Val loss: 0.1798
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 19/30 - Train loss: 0.1711 - Val loss: 0.1632
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 20/30 - Train loss: 0.1539 - Val loss: 0.1453
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 21/30 - Train loss: 0.1388 - Val loss: 0.1331
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 22/30 - Train loss: 0.1253 - Val loss: 0.1195
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 23/30 - Train loss: 0.1134 - Val loss: 0.1076
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 24/30 - Train loss: 0.1028 - Val loss: 0.0980
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 25/30 - Train loss: 0.0934 - Val loss: 0.0897
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 26/30 - Train loss: 0.0850 - Val loss: 0.0808
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 27/30 - Train loss: 0.0774 - Val loss: 0.0738
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 28/30 - Train loss: 0.0708 - Val loss: 0.0693
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 29/30 - Train loss: 0.0650 - Val loss: 0.0642
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 30/30 - Train loss: 0.0597 - Val loss: 0.0574
+  0%|          | 0/4 [00:00<?, ?it/s]
+intersection: 4200187
+union: 5300508
+IoU: 0.7924
+precision: 0.9662
+recall: 0.7711
+F1: 0.8577
+470
+470
+torch.Size([32, 3, 256, 256]) torch.Size([32, 1, 256, 256])
+  0%|          | 0/30 [00:00<?, ?it/s]
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 1/30 - Train loss: 0.7356 - Val loss: 0.6965
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 2/30 - Train loss: 0.7049 - Val loss: 0.7234
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 3/30 - Train loss: 0.6947 - Val loss: 0.6881
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 4/30 - Train loss: 0.6864 - Val loss: 0.6721
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 5/30 - Train loss: 0.6762 - Val loss: 0.6498
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 6/30 - Train loss: 0.6624 - Val loss: 0.6237
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 7/30 - Train loss: 0.6356 - Val loss: 0.5730
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 8/30 - Train loss: 0.5822 - Val loss: 0.4837
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 9/30 - Train loss: 0.5226 - Val loss: 0.4483
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 10/30 - Train loss: 0.4655 - Val loss: 0.3831
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 11/30 - Train loss: 0.4164 - Val loss: 0.3468
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 12/30 - Train loss: 0.3734 - Val loss: 0.3287
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 13/30 - Train loss: 0.3346 - Val loss: 0.3007
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 14/30 - Train loss: 0.2999 - Val loss: 0.2775
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 15/30 - Train loss: 0.2691 - Val loss: 0.2489
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 16/30 - Train loss: 0.2413 - Val loss: 0.2276
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 17/30 - Train loss: 0.2163 - Val loss: 0.2059
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 18/30 - Train loss: 0.1944 - Val loss: 0.1831
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 19/30 - Train loss: 0.1749 - Val loss: 0.1650
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 20/30 - Train loss: 0.1574 - Val loss: 0.1471
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 21/30 - Train loss: 0.1419 - Val loss: 0.1334
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 22/30 - Train loss: 0.1283 - Val loss: 0.1219
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 23/30 - Train loss: 0.1163 - Val loss: 0.1091
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 24/30 - Train loss: 0.1053 - Val loss: 0.0989
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 25/30 - Train loss: 0.0958 - Val loss: 0.0897
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 26/30 - Train loss: 0.0876 - Val loss: 0.0808
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 27/30 - Train loss: 0.0800 - Val loss: 0.0756
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 28/30 - Train loss: 0.0733 - Val loss: 0.0697
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 29/30 - Train loss: 0.0674 - Val loss: 0.0646
+  0%|          | 0/15 [00:00<?, ?it/s]
+  0%|          | 0/4 [00:00<?, ?it/s]
+Epoch 30/30 - Train loss: 0.0621 - Val loss: 0.0597
+  0%|          | 0/4 [00:00<?, ?it/s]
+intersection: 1989661
+union: 5381323
+IoU: 0.3697
+precision: 0.9679
+recall: 0.3653
+F1: 0.5304
