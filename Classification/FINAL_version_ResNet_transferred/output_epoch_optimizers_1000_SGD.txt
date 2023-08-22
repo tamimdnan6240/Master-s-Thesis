@@ -1,0 +1,1382 @@
+cpu
+Follwing classes are there : 
+ ['Alligator Cracks', 'Longitudinal Cracks', 'Transverse Cracks']
+data length: 132
+Length of Train Data : 92
+Length of Validation Data : 40
+Transverse Cracks Alligator Cracks Longitudinal Cracks Transverse Cracks Transverse Cracks Longitudinal Cracks Alligator Cracks Transverse Cracks Transverse Cracks Longitudinal Cracks Alligator Cracks Alligator Cracks Alligator Cracks Transverse Cracks Transverse Cracks Longitudinal Cracks Transverse Cracks Longitudinal Cracks Transverse Cracks Transverse Cracks Longitudinal Cracks Alligator Cracks Transverse Cracks Transverse Cracks Transverse Cracks Transverse Cracks Transverse Cracks Transverse Cracks Transverse Cracks Transverse Cracks Longitudinal Cracks Transverse Cracks
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (4): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (5): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=2048, out_features=1000, bias=True)
+)
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (4): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (5): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): Bottleneck(
+      (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Sequential(
+    (0): Linear(in_features=2048, out_features=512, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Linear(in_features=512, out_features=3, bias=True)
+    (3): Softmax(dim=1)
+    (4): Dropout(p=0.5, inplace=False)
+  )
+)
+epoch: 0: train_loss: 1.1473268270492554, train_acc: 0.3199404776096344, val_loss: 1.095995545387268, val_acc: 0.34375
+epoch: 1: train_loss: 1.1318883299827576, train_acc: 0.3154761890570323, val_loss: 1.0985438823699951, val_acc: 0.21875
+epoch: 2: train_loss: 1.123397668202718, train_acc: 0.3348214328289032, val_loss: 1.0943089723587036, val_acc: 0.515625
+epoch: 3: train_loss: 1.128446986277898, train_acc: 0.2827380994955699, val_loss: 1.0953931212425232, val_acc: 0.359375
+epoch: 4: train_loss: 1.137442127863566, train_acc: 0.2633928557236989, val_loss: 1.0990259647369385, val_acc: 0.328125
+epoch: 5: train_loss: 1.141863120926751, train_acc: 0.25, val_loss: 1.0983029007911682, val_acc: 0.3125
+epoch: 6: train_loss: 1.1397863172349474, train_acc: 0.3258928557236989, val_loss: 1.09805166721344, val_acc: 0.328125
+epoch: 7: train_loss: 1.137365976969401, train_acc: 0.3273809552192688, val_loss: 1.1042649149894714, val_acc: 0.25
+epoch: 8: train_loss: 1.1406695268772264, train_acc: 0.2991071442763011, val_loss: 1.1011894345283508, val_acc: 0.375
+epoch: 9: train_loss: 1.1416454553604125, train_acc: 0.2901785671710968, val_loss: 1.1000013947486877, val_acc: 0.390625
+epoch: 10: train_loss: 1.1419492707108005, train_acc: 0.3705357114473979, val_loss: 1.1008152961730957, val_acc: 0.28125
+epoch: 11: train_loss: 1.1402369406488206, train_acc: 0.4345238109429677, val_loss: 1.0993651747703552, val_acc: 0.328125
+epoch: 12: train_loss: 1.139949911679977, train_acc: 0.3869047661622365, val_loss: 1.104118525981903, val_acc: 0.109375
+epoch: 13: train_loss: 1.1358283105350675, train_acc: 0.4508928557236989, val_loss: 1.1048960089683533, val_acc: 0.15625
+epoch: 14: train_loss: 1.1344367610083685, train_acc: 0.4151785671710968, val_loss: 1.1011083126068115, val_acc: 0.296875
+epoch: 15: train_loss: 1.1330828269322712, train_acc: 0.4032738109429677, val_loss: 1.1008747220039368, val_acc: 0.25
+epoch: 16: train_loss: 1.1285970211029053, train_acc: 0.4285714228947957, val_loss: 1.0957671999931335, val_acc: 0.421875
+epoch: 17: train_loss: 1.1278469628757901, train_acc: 0.4092261890570323, val_loss: 1.0939924716949463, val_acc: 0.28125
+epoch: 18: train_loss: 1.1285254495185717, train_acc: 0.3139880994955699, val_loss: 1.0972854495048523, val_acc: 0.390625
+epoch: 19: train_loss: 1.1305466572443643, train_acc: 0.2797619054714839, val_loss: 1.0985236763954163, val_acc: 0.328125
+epoch: 20: train_loss: 1.1305566534163458, train_acc: 0.3645833333333333, val_loss: 1.091517150402069, val_acc: 0.421875
+epoch: 21: train_loss: 1.1274316003828337, train_acc: 0.4464285671710968, val_loss: 1.0936956405639648, val_acc: 0.40625
+epoch: 22: train_loss: 1.1286322396734485, train_acc: 0.3675595223903656, val_loss: 1.0869711637496948, val_acc: 0.5
+epoch: 23: train_loss: 1.1278805120123756, train_acc: 0.3779761890570323, val_loss: 1.0925363898277283, val_acc: 0.453125
+epoch: 24: train_loss: 1.1265304946899413, train_acc: 0.3839285671710968, val_loss: 1.0922029614448547, val_acc: 0.40625
+epoch: 25: train_loss: 1.1255637208620706, train_acc: 0.4032738109429677, val_loss: 1.0984720587730408, val_acc: 0.3125
+epoch: 26: train_loss: 1.1254705072920996, train_acc: 0.3065476218859355, val_loss: 1.0909781455993652, val_acc: 0.375
+epoch: 27: train_loss: 1.1244286994139352, train_acc: 0.4613095323244731, val_loss: 1.0886279344558716, val_acc: 0.359375
+epoch: 28: train_loss: 1.1237213652709432, train_acc: 0.4032738109429677, val_loss: 1.0939377546310425, val_acc: 0.359375
+epoch: 29: train_loss: 1.1233453684382966, train_acc: 0.3794642885526021, val_loss: 1.090298354625702, val_acc: 0.40625
+epoch: 30: train_loss: 1.1242876796312227, train_acc: 0.375, val_loss: 1.0833600163459778, val_acc: 0.40625
+epoch: 31: train_loss: 1.12678808098038, train_acc: 0.2619047661622365, val_loss: 1.0946986675262451, val_acc: 0.359375
+epoch: 32: train_loss: 1.1275703184532395, train_acc: 0.23065476616223654, val_loss: 1.0777199864387512, val_acc: 0.453125
+epoch: 33: train_loss: 1.1258598098567887, train_acc: 0.4360119005044301, val_loss: 1.0791739225387573, val_acc: 0.40625
+epoch: 34: train_loss: 1.1251738627751668, train_acc: 0.4375, val_loss: 1.0742169618606567, val_acc: 0.453125
+epoch: 35: train_loss: 1.1257316304577722, train_acc: 0.3214285721381505, val_loss: 1.0759897828102112, val_acc: 0.453125
+epoch: 36: train_loss: 1.1253946933660421, train_acc: 0.3169642885526021, val_loss: 1.0831024646759033, val_acc: 0.359375
+epoch: 37: train_loss: 1.1247336383451494, train_acc: 0.4479166666666667, val_loss: 1.07497900724411, val_acc: 0.453125
+epoch: 38: train_loss: 1.125030778412126, train_acc: 0.3452380994955699, val_loss: 1.0677420496940613, val_acc: 0.453125
+epoch: 39: train_loss: 1.125567188858986, train_acc: 0.3184523781140645, val_loss: 1.0641127228736877, val_acc: 0.515625
+epoch: 40: train_loss: 1.1241773357236289, train_acc: 0.4494047562281291, val_loss: 1.0915387868881226, val_acc: 0.265625
+epoch: 41: train_loss: 1.1245043457500519, train_acc: 0.3050595223903656, val_loss: 1.0677200555801392, val_acc: 0.453125
+epoch: 42: train_loss: 1.1227151275605196, train_acc: 0.4404761890570323, val_loss: 1.0607845783233643, val_acc: 0.5
+epoch: 43: train_loss: 1.1233238568811705, train_acc: 0.3125, val_loss: 1.0618391633033752, val_acc: 0.5
+epoch: 44: train_loss: 1.1217913980837222, train_acc: 0.4315476218859355, val_loss: 1.0799751281738281, val_acc: 0.359375
+epoch: 45: train_loss: 1.1226275805113972, train_acc: 0.28125, val_loss: 1.055816888809204, val_acc: 0.546875
+epoch: 46: train_loss: 1.1215307911237082, train_acc: 0.3973214328289032, val_loss: 1.0810655355453491, val_acc: 0.359375
+epoch: 47: train_loss: 1.1216320871478982, train_acc: 0.3392857114473979, val_loss: 1.0647352933883667, val_acc: 0.5
+epoch: 48: train_loss: 1.1220491293336259, train_acc: 0.3229166666666667, val_loss: 1.0740388631820679, val_acc: 0.40625
+epoch: 49: train_loss: 1.1214446620146434, train_acc: 0.4107142885526021, val_loss: 1.0801023840904236, val_acc: 0.359375
+epoch: 50: train_loss: 1.1198964578653474, train_acc: 0.4747023781140645, val_loss: 1.0675542950630188, val_acc: 0.40625
+epoch: 51: train_loss: 1.1196450224289527, train_acc: 0.40625, val_loss: 1.0838826298713684, val_acc: 0.359375
+epoch: 52: train_loss: 1.118328994924917, train_acc: 0.4300595223903656, val_loss: 1.0666913390159607, val_acc: 0.453125
+epoch: 53: train_loss: 1.1172821315718284, train_acc: 0.4404761890570323, val_loss: 1.0622050166130066, val_acc: 0.453125
+epoch: 54: train_loss: 1.1163017225987983, train_acc: 0.4211309552192688, val_loss: 1.0682281255722046, val_acc: 0.40625
+epoch: 55: train_loss: 1.116448066419079, train_acc: 0.3258928557236989, val_loss: 1.073610544204712, val_acc: 0.40625
+epoch: 56: train_loss: 1.116244832326097, train_acc: 0.3333333333333333, val_loss: 1.0483232140541077, val_acc: 0.546875
+epoch: 57: train_loss: 1.1165004026615757, train_acc: 0.3333333333333333, val_loss: 1.0810205936431885, val_acc: 0.359375
+epoch: 58: train_loss: 1.1165794144242496, train_acc: 0.3050595223903656, val_loss: 1.0702253580093384, val_acc: 0.40625
+epoch: 59: train_loss: 1.116305484705501, train_acc: 0.3690476218859355, val_loss: 1.0502712726593018, val_acc: 0.546875
+epoch: 60: train_loss: 1.115831684870798, train_acc: 0.4434523781140645, val_loss: 1.0483842492103577, val_acc: 0.5
+epoch: 61: train_loss: 1.1158000926176705, train_acc: 0.3660714328289032, val_loss: 1.0574802160263062, val_acc: 0.453125
+epoch: 62: train_loss: 1.1170414683049317, train_acc: 0.23958333333333334, val_loss: 1.041640818119049, val_acc: 0.546875
+epoch: 63: train_loss: 1.116543388304611, train_acc: 0.3898809552192688, val_loss: 1.0709568858146667, val_acc: 0.40625
+epoch: 64: train_loss: 1.116759892916068, train_acc: 0.3363095223903656, val_loss: 1.0719426274299622, val_acc: 0.40625
+epoch: 65: train_loss: 1.1165389818976623, train_acc: 0.3333333333333333, val_loss: 1.0513010621070862, val_acc: 0.5
+epoch: 66: train_loss: 1.1163980014881683, train_acc: 0.3839285671710968, val_loss: 1.0659255385398865, val_acc: 0.40625
+epoch: 67: train_loss: 1.116064666240823, train_acc: 0.3720238109429677, val_loss: 1.0359749794006348, val_acc: 0.546875
+epoch: 68: train_loss: 1.1156721440490316, train_acc: 0.4002976218859355, val_loss: 1.0401928424835205, val_acc: 0.5
+epoch: 69: train_loss: 1.1158582957017988, train_acc: 0.3258928557236989, val_loss: 1.0773203372955322, val_acc: 0.359375
+epoch: 70: train_loss: 1.115871187386938, train_acc: 0.3601190447807312, val_loss: 1.0644906163215637, val_acc: 0.40625
+epoch: 71: train_loss: 1.1155060802896815, train_acc: 0.3586309552192688, val_loss: 1.0770175457000732, val_acc: 0.359375
+epoch: 72: train_loss: 1.1149022614574866, train_acc: 0.4419642885526021, val_loss: 1.0479175448417664, val_acc: 0.5
+epoch: 73: train_loss: 1.1146194089103387, train_acc: 0.3690476218859355, val_loss: 1.0683327317237854, val_acc: 0.40625
+epoch: 74: train_loss: 1.1153572689162359, train_acc: 0.2797619054714839, val_loss: 1.069669783115387, val_acc: 0.359375
+epoch: 75: train_loss: 1.1152219262562297, train_acc: 0.3720238109429677, val_loss: 1.0555661916732788, val_acc: 0.40625
+epoch: 76: train_loss: 1.1142473156318002, train_acc: 0.4583333333333333, val_loss: 1.0509176850318909, val_acc: 0.453125
+epoch: 77: train_loss: 1.1136680090019844, train_acc: 0.3898809552192688, val_loss: 1.0466415286064148, val_acc: 0.453125
+epoch: 78: train_loss: 1.1133993107055309, train_acc: 0.3467261890570323, val_loss: 1.0586912035942078, val_acc: 0.40625
+epoch: 79: train_loss: 1.1129705406725405, train_acc: 0.3586309552192688, val_loss: 1.0570229291915894, val_acc: 0.453125
+epoch: 80: train_loss: 1.11271342794591, train_acc: 0.3958333333333333, val_loss: 1.0440941452980042, val_acc: 0.453125
+epoch: 81: train_loss: 1.1121337464669854, train_acc: 0.3616071442763011, val_loss: 1.068136990070343, val_acc: 0.359375
+epoch: 82: train_loss: 1.1120348524855799, train_acc: 0.3824404776096344, val_loss: 1.079649031162262, val_acc: 0.3125
+epoch: 83: train_loss: 1.1118836807353154, train_acc: 0.3705357114473979, val_loss: 1.0718668103218079, val_acc: 0.359375
+epoch: 84: train_loss: 1.111451267962362, train_acc: 0.3586309552192688, val_loss: 1.037886619567871, val_acc: 0.5
+epoch: 85: train_loss: 1.1107393447742904, train_acc: 0.4613095323244731, val_loss: 1.05231374502182, val_acc: 0.453125
+epoch: 86: train_loss: 1.1099843937775182, train_acc: 0.4032738109429677, val_loss: 1.0451247692108154, val_acc: 0.453125
+epoch: 87: train_loss: 1.1094475388526914, train_acc: 0.4508928656578064, val_loss: 1.0650903582572937, val_acc: 0.359375
+epoch: 88: train_loss: 1.1095438539312126, train_acc: 0.3348214328289032, val_loss: 1.058532178401947, val_acc: 0.40625
+epoch: 89: train_loss: 1.1089498347706264, train_acc: 0.4226190447807312, val_loss: 1.0501171350479126, val_acc: 0.453125
+epoch: 90: train_loss: 1.1081063013810377, train_acc: 0.4345238109429677, val_loss: 1.0553293824195862, val_acc: 0.40625
+epoch: 91: train_loss: 1.1083753039871436, train_acc: 0.3348214328289032, val_loss: 1.0664399862289429, val_acc: 0.359375
+epoch: 92: train_loss: 1.107932544096396, train_acc: 0.4136904776096344, val_loss: 1.0656383037567139, val_acc: 0.359375
+epoch: 93: train_loss: 1.107385530962166, train_acc: 0.4583333333333333, val_loss: 1.05707448720932, val_acc: 0.40625
+epoch: 94: train_loss: 1.106898714366712, train_acc: 0.3869047661622365, val_loss: 1.0443430542945862, val_acc: 0.453125
+epoch: 95: train_loss: 1.1068985747794309, train_acc: 0.3273809552192688, val_loss: 1.0554481148719788, val_acc: 0.40625
+epoch: 96: train_loss: 1.1066859866335628, train_acc: 0.3497023781140645, val_loss: 1.0663952231407166, val_acc: 0.359375
+epoch: 97: train_loss: 1.1065743545285698, train_acc: 0.3184523781140645, val_loss: 1.052898108959198, val_acc: 0.40625
+epoch: 98: train_loss: 1.1065897279315524, train_acc: 0.3214285671710968, val_loss: 1.0820923447608948, val_acc: 0.3125
+epoch: 99: train_loss: 1.106547853151957, train_acc: 0.3735119005044301, val_loss: 1.0841949582099915, val_acc: 0.3125
+epoch: 100: train_loss: 1.106538663209468, train_acc: 0.3556547661622365, val_loss: 1.0678263306617737, val_acc: 0.359375
+epoch: 101: train_loss: 1.1062217837844799, train_acc: 0.3586309552192688, val_loss: 1.0431817173957825, val_acc: 0.453125
+epoch: 102: train_loss: 1.1060065304962947, train_acc: 0.3616071442763011, val_loss: 1.050323247909546, val_acc: 0.40625
+epoch: 103: train_loss: 1.1056075697908034, train_acc: 0.4047619005044301, val_loss: 1.0508034229278564, val_acc: 0.40625
+epoch: 104: train_loss: 1.1060478802711244, train_acc: 0.2529761890570323, val_loss: 1.042186200618744, val_acc: 0.453125
+epoch: 105: train_loss: 1.1058823663108754, train_acc: 0.3720238109429677, val_loss: 1.0539934635162354, val_acc: 0.40625
+epoch: 106: train_loss: 1.1057342443139382, train_acc: 0.3779761890570323, val_loss: 1.0486546754837036, val_acc: 0.40625
+epoch: 107: train_loss: 1.1055675288777291, train_acc: 0.3675595223903656, val_loss: 1.0365213751792908, val_acc: 0.453125
+epoch: 108: train_loss: 1.105331241173117, train_acc: 0.3675595223903656, val_loss: 1.0423464179039001, val_acc: 0.453125
+epoch: 109: train_loss: 1.10486116734418, train_acc: 0.3943452338377635, val_loss: 1.02449369430542, val_acc: 0.5
+epoch: 110: train_loss: 1.1048210887937573, train_acc: 0.3720238109429677, val_loss: 1.038231074810028, val_acc: 0.453125
+epoch: 111: train_loss: 1.1046082753510702, train_acc: 0.3675595323244731, val_loss: 1.0594190955162048, val_acc: 0.359375
+epoch: 112: train_loss: 1.1041633562352453, train_acc: 0.3720238109429677, val_loss: 1.0687528252601624, val_acc: 0.359375
+epoch: 113: train_loss: 1.1038888926394501, train_acc: 0.3869047562281291, val_loss: 1.0427302718162537, val_acc: 0.40625
+epoch: 114: train_loss: 1.1032942073932592, train_acc: 0.3958333333333333, val_loss: 1.0608604550361633, val_acc: 0.359375
+epoch: 115: train_loss: 1.1034360147755722, train_acc: 0.3214285721381505, val_loss: 1.0124020874500275, val_acc: 0.546875
+epoch: 116: train_loss: 1.1034772830810982, train_acc: 0.3913690447807312, val_loss: 1.0362462997436523, val_acc: 0.453125
+epoch: 117: train_loss: 1.1036763117138275, train_acc: 0.3363095223903656, val_loss: 1.0731250047683716, val_acc: 0.3125
+epoch: 118: train_loss: 1.1033569176991782, train_acc: 0.3675595223903656, val_loss: 1.0396426916122437, val_acc: 0.40625
+epoch: 119: train_loss: 1.1032888452212017, train_acc: 0.3273809552192688, val_loss: 1.0574060678482056, val_acc: 0.359375
+epoch: 120: train_loss: 1.1029833767039718, train_acc: 0.3809523781140645, val_loss: 1.0615975260734558, val_acc: 0.359375
+epoch: 121: train_loss: 1.1026640109351427, train_acc: 0.3645833333333333, val_loss: 1.031911015510559, val_acc: 0.453125
+epoch: 122: train_loss: 1.102744671871992, train_acc: 0.3407738109429677, val_loss: 1.0313769578933716, val_acc: 0.453125
+epoch: 123: train_loss: 1.102219373147975, train_acc: 0.4255952338377635, val_loss: 1.0313758850097656, val_acc: 0.453125
+epoch: 124: train_loss: 1.1023551220893861, train_acc: 0.3586309552192688, val_loss: 0.9901588559150696, val_acc: 0.59375
+epoch: 125: train_loss: 1.102077772219976, train_acc: 0.3854166666666667, val_loss: 1.0348594188690186, val_acc: 0.453125
+epoch: 126: train_loss: 1.101879549933857, train_acc: 0.3958333333333333, val_loss: 1.0198774933815002, val_acc: 0.5
+epoch: 127: train_loss: 1.1015833475006127, train_acc: 0.4017857114473979, val_loss: 1.0355412364006042, val_acc: 0.40625
+epoch: 128: train_loss: 1.1012080750724147, train_acc: 0.3854166666666667, val_loss: 1.0419889688491821, val_acc: 0.40625
+epoch: 129: train_loss: 1.100893591764646, train_acc: 0.3720238109429677, val_loss: 1.0271517038345337, val_acc: 0.453125
+epoch: 130: train_loss: 1.100506904319346, train_acc: 0.4107142885526021, val_loss: 1.04071444272995, val_acc: 0.40625
+epoch: 131: train_loss: 1.1007115378825354, train_acc: 0.2857142885526021, val_loss: 1.0548406839370728, val_acc: 0.359375
+epoch: 132: train_loss: 1.100280046313628, train_acc: 0.4107142885526021, val_loss: 1.0362062454223633, val_acc: 0.40625
+epoch: 133: train_loss: 1.1002945593043945, train_acc: 0.28125, val_loss: 1.0304292440414429, val_acc: 0.453125
+epoch: 134: train_loss: 1.0999713217770617, train_acc: 0.4136904776096344, val_loss: 1.018635332584381, val_acc: 0.453125
+epoch: 135: train_loss: 1.0993173870385866, train_acc: 0.4479166666666667, val_loss: 1.0393264293670654, val_acc: 0.40625
+epoch: 136: train_loss: 1.0991731181631996, train_acc: 0.3883928557236989, val_loss: 0.9982001781463623, val_acc: 0.546875
+epoch: 137: train_loss: 1.0989049962465318, train_acc: 0.3973214328289032, val_loss: 1.0246755480766296, val_acc: 0.453125
+epoch: 138: train_loss: 1.098691813236804, train_acc: 0.3556547661622365, val_loss: 0.9961313903331757, val_acc: 0.546875
+epoch: 139: train_loss: 1.098374455741474, train_acc: 0.4226190447807312, val_loss: 1.0425933003425598, val_acc: 0.40625
+epoch: 140: train_loss: 1.0980952954179575, train_acc: 0.3824404776096344, val_loss: 1.0406907200813293, val_acc: 0.40625
+epoch: 141: train_loss: 1.0977417640562914, train_acc: 0.4151785671710968, val_loss: 1.0531208515167236, val_acc: 0.359375
+epoch: 142: train_loss: 1.0973884235451, train_acc: 0.3928571442763011, val_loss: 1.053270697593689, val_acc: 0.359375
+epoch: 143: train_loss: 1.0972461809438692, train_acc: 0.4002976218859355, val_loss: 1.0356502532958984, val_acc: 0.453125
+epoch: 144: train_loss: 1.0973596724970591, train_acc: 0.3482142885526021, val_loss: 1.0403386354446411, val_acc: 0.40625
+epoch: 145: train_loss: 1.0965930254764211, train_acc: 0.4985119005044301, val_loss: 1.0144555568695068, val_acc: 0.453125
+epoch: 146: train_loss: 1.0962017209621788, train_acc: 0.3958333333333333, val_loss: 1.0507768988609314, val_acc: 0.359375
+epoch: 147: train_loss: 1.0960014698741676, train_acc: 0.3556547562281291, val_loss: 0.9767911434173584, val_acc: 0.59375
+epoch: 148: train_loss: 1.0957400192083664, train_acc: 0.4166666666666667, val_loss: 1.0014697313308716, val_acc: 0.5
+epoch: 149: train_loss: 1.0953447277016113, train_acc: 0.4226190447807312, val_loss: 1.0254398584365845, val_acc: 0.453125
+epoch: 150: train_loss: 1.0952847873664588, train_acc: 0.3720238109429677, val_loss: 1.0259840488433838, val_acc: 0.453125
+epoch: 151: train_loss: 1.0950362045775384, train_acc: 0.3586309552192688, val_loss: 1.0733517408370972, val_acc: 0.265625
+epoch: 152: train_loss: 1.0946985910401108, train_acc: 0.40625, val_loss: 1.0489477515220642, val_acc: 0.359375
+epoch: 153: train_loss: 1.094247201562444, train_acc: 0.4732142885526021, val_loss: 0.993241548538208, val_acc: 0.546875
+epoch: 154: train_loss: 1.0940029745460842, train_acc: 0.3898809552192688, val_loss: 1.0003795623779297, val_acc: 0.5
+epoch: 155: train_loss: 1.0938492556158297, train_acc: 0.3258928557236989, val_loss: 1.0378979444503784, val_acc: 0.40625
+epoch: 156: train_loss: 1.093317628159898, train_acc: 0.4226190447807312, val_loss: 1.0356183052062988, val_acc: 0.40625
+epoch: 157: train_loss: 1.0931763024018286, train_acc: 0.34375, val_loss: 1.0299347043037415, val_acc: 0.40625
+epoch: 158: train_loss: 1.0928264627666595, train_acc: 0.4345238109429677, val_loss: 0.9966566264629364, val_acc: 0.5
+epoch: 159: train_loss: 1.0926173569013677, train_acc: 0.3675595223903656, val_loss: 1.0476404428482056, val_acc: 0.359375
+epoch: 160: train_loss: 1.0923360083907783, train_acc: 0.3794642885526021, val_loss: 1.0263487100601196, val_acc: 0.40625
+epoch: 161: train_loss: 1.0923581985534465, train_acc: 0.3035714328289032, val_loss: 1.0074586868286133, val_acc: 0.453125
+epoch: 162: train_loss: 1.0918414547643294, train_acc: 0.4315476218859355, val_loss: 1.0391225218772888, val_acc: 0.359375
+epoch: 163: train_loss: 1.091592979261546, train_acc: 0.375, val_loss: 1.0033860206604004, val_acc: 0.5
+epoch: 164: train_loss: 1.0913303225931499, train_acc: 0.34375, val_loss: 1.0070059299468994, val_acc: 0.5
+epoch: 165: train_loss: 1.0911562075337256, train_acc: 0.3675595223903656, val_loss: 1.0572786927223206, val_acc: 0.3125
+epoch: 166: train_loss: 1.0909401838650963, train_acc: 0.3675595223903656, val_loss: 1.0224076509475708, val_acc: 0.40625
+epoch: 167: train_loss: 1.0906956731563526, train_acc: 0.4002976218859355, val_loss: 1.0376721620559692, val_acc: 0.359375
+epoch: 168: train_loss: 1.090133121262876, train_acc: 0.46875, val_loss: 1.0321861505508423, val_acc: 0.40625
+epoch: 169: train_loss: 1.0902003676283596, train_acc: 0.3065476218859355, val_loss: 0.9815878570079803, val_acc: 0.546875
+epoch: 170: train_loss: 1.0901192315140666, train_acc: 0.3482142885526021, val_loss: 1.0454621315002441, val_acc: 0.359375
+epoch: 171: train_loss: 1.0900034742761955, train_acc: 0.3214285721381505, val_loss: 1.0317350625991821, val_acc: 0.40625
+epoch: 172: train_loss: 1.089822434276515, train_acc: 0.4107142885526021, val_loss: 1.059407889842987, val_acc: 0.3125
+epoch: 173: train_loss: 1.0891967974174985, train_acc: 0.4821428656578064, val_loss: 1.0184356570243835, val_acc: 0.453125
+epoch: 174: train_loss: 1.0889654026712694, train_acc: 0.3988095223903656, val_loss: 1.0293803215026855, val_acc: 0.40625
+epoch: 175: train_loss: 1.088882467737704, train_acc: 0.3229166666666667, val_loss: 1.0362552404403687, val_acc: 0.40625
+epoch: 176: train_loss: 1.088723826767586, train_acc: 0.3720238109429677, val_loss: 1.0329052805900574, val_acc: 0.359375
+epoch: 177: train_loss: 1.0886175742979805, train_acc: 0.3422619054714839, val_loss: 1.0146114230155945, val_acc: 0.453125
+epoch: 178: train_loss: 1.0881641520468222, train_acc: 0.4642857114473979, val_loss: 0.9921943247318268, val_acc: 0.5
+epoch: 179: train_loss: 1.0879047898230734, train_acc: 0.3928571442763011, val_loss: 1.046229064464569, val_acc: 0.359375
+epoch: 180: train_loss: 1.0877389759648575, train_acc: 0.4226190447807312, val_loss: 1.0223962664604187, val_acc: 0.40625
+epoch: 181: train_loss: 1.0875643839984592, train_acc: 0.3497023781140645, val_loss: 1.0372292399406433, val_acc: 0.359375
+epoch: 182: train_loss: 1.087277810538836, train_acc: 0.3839285671710968, val_loss: 1.0368953347206116, val_acc: 0.359375
+epoch: 183: train_loss: 1.0872765104623814, train_acc: 0.3154761890570323, val_loss: 1.0063125789165497, val_acc: 0.453125
+epoch: 184: train_loss: 1.087152156206939, train_acc: 0.3616071442763011, val_loss: 1.0376383066177368, val_acc: 0.359375
+epoch: 185: train_loss: 1.0872200202984628, train_acc: 0.3273809552192688, val_loss: 1.0069448351860046, val_acc: 0.453125
+epoch: 186: train_loss: 1.0870709581808615, train_acc: 0.3943452388048172, val_loss: 1.0083141326904297, val_acc: 0.453125
+epoch: 187: train_loss: 1.0867743945502224, train_acc: 0.4077380895614624, val_loss: 1.049851804971695, val_acc: 0.3125
+epoch: 188: train_loss: 1.0865040998610245, train_acc: 0.3645833333333333, val_loss: 1.0374667644500732, val_acc: 0.359375
+epoch: 189: train_loss: 1.0862668999454435, train_acc: 0.4017857114473979, val_loss: 1.0341069102287292, val_acc: 0.359375
+epoch: 190: train_loss: 1.0859386710804382, train_acc: 0.3898809552192688, val_loss: 1.0099502503871918, val_acc: 0.453125
+epoch: 191: train_loss: 1.085849846195844, train_acc: 0.3556547661622365, val_loss: 0.9967059791088104, val_acc: 0.453125
+epoch: 192: train_loss: 1.0855839302914545, train_acc: 0.3541666666666667, val_loss: 1.0005892217159271, val_acc: 0.453125
+epoch: 193: train_loss: 1.0855092176866699, train_acc: 0.3601190447807312, val_loss: 0.9990087449550629, val_acc: 0.453125
+epoch: 194: train_loss: 1.0854372415787137, train_acc: 0.34375, val_loss: 0.9887891411781311, val_acc: 0.5
+epoch: 195: train_loss: 1.0852996461650957, train_acc: 0.3541666666666667, val_loss: 1.0196177959442139, val_acc: 0.40625
+epoch: 196: train_loss: 1.0850330637594572, train_acc: 0.4151785671710968, val_loss: 1.026780903339386, val_acc: 0.359375
+epoch: 197: train_loss: 1.084891287867068, train_acc: 0.3541666666666667, val_loss: 1.0148210525512695, val_acc: 0.40625
+epoch: 198: train_loss: 1.0848179347750733, train_acc: 0.3809523781140645, val_loss: 1.0291218161582947, val_acc: 0.40625
+epoch: 199: train_loss: 1.084928430616856, train_acc: 0.3125, val_loss: 1.0066322088241577, val_acc: 0.453125
+epoch: 200: train_loss: 1.084906206498692, train_acc: 0.3050595223903656, val_loss: 1.0069881081581116, val_acc: 0.453125
+epoch: 201: train_loss: 1.0845666989044787, train_acc: 0.3571428557236989, val_loss: 1.018829345703125, val_acc: 0.40625
+epoch: 202: train_loss: 1.0844401034032578, train_acc: 0.3541666666666667, val_loss: 1.014058768749237, val_acc: 0.40625
+epoch: 203: train_loss: 1.0844230621663578, train_acc: 0.3586309552192688, val_loss: 1.0260602831840515, val_acc: 0.359375
+epoch: 204: train_loss: 1.0844026696391227, train_acc: 0.3303571442763011, val_loss: 0.984935849905014, val_acc: 0.5
+epoch: 205: train_loss: 1.0842428619228912, train_acc: 0.3377976218859355, val_loss: 1.014894723892212, val_acc: 0.359375
+epoch: 206: train_loss: 1.0840096624385145, train_acc: 0.4122023781140645, val_loss: 1.0289855897426605, val_acc: 0.359375
+epoch: 207: train_loss: 1.0837932860431005, train_acc: 0.3883928557236989, val_loss: 1.022053837776184, val_acc: 0.40625
+epoch: 208: train_loss: 1.0836471485559265, train_acc: 0.3913690447807312, val_loss: 0.997435986995697, val_acc: 0.515625
+epoch: 209: train_loss: 1.0835712532202408, train_acc: 0.4032738109429677, val_loss: 1.0191941261291504, val_acc: 0.40625
+epoch: 210: train_loss: 1.0833103253754777, train_acc: 0.4330357114473979, val_loss: 0.9926519989967346, val_acc: 0.453125
+epoch: 211: train_loss: 1.083256195738631, train_acc: 0.4047619005044301, val_loss: 1.0101935267448425, val_acc: 0.40625
+epoch: 212: train_loss: 1.0832506858500335, train_acc: 0.3377976218859355, val_loss: 1.0300663113594055, val_acc: 0.359375
+epoch: 213: train_loss: 1.0830524870168388, train_acc: 0.3675595223903656, val_loss: 0.9759676158428192, val_acc: 0.5
+epoch: 214: train_loss: 1.0827738688897721, train_acc: 0.3898809552192688, val_loss: 0.9894160628318787, val_acc: 0.5
+epoch: 215: train_loss: 1.0825843062297802, train_acc: 0.40625, val_loss: 0.9781332015991211, val_acc: 0.5
+epoch: 216: train_loss: 1.0824443651234505, train_acc: 0.3809523781140645, val_loss: 1.0092678368091583, val_acc: 0.40625
+epoch: 217: train_loss: 1.0821417181863702, train_acc: 0.4449404776096344, val_loss: 0.9897501468658447, val_acc: 0.453125
+epoch: 218: train_loss: 1.08202555498939, train_acc: 0.3348214328289032, val_loss: 0.9862494468688965, val_acc: 0.5
+epoch: 219: train_loss: 1.0821617426294274, train_acc: 0.2842261890570323, val_loss: 1.012104094028473, val_acc: 0.4375
+epoch: 220: train_loss: 1.0819426746210188, train_acc: 0.3705357114473979, val_loss: 1.0363557040691376, val_acc: 0.375
+epoch: 221: train_loss: 1.0818243055372272, train_acc: 0.3809523781140645, val_loss: 1.0067294836044312, val_acc: 0.40625
+epoch: 222: train_loss: 1.0817839423993605, train_acc: 0.3586309552192688, val_loss: 1.0296123623847961, val_acc: 0.359375
+epoch: 223: train_loss: 1.081644112510341, train_acc: 0.3794642885526021, val_loss: 0.9985675811767578, val_acc: 0.46875
+epoch: 224: train_loss: 1.0812252255722332, train_acc: 0.4270833333333333, val_loss: 1.0046607851982117, val_acc: 0.421875
+epoch: 225: train_loss: 1.0811143409361887, train_acc: 0.3258928557236989, val_loss: 0.977023184299469, val_acc: 0.5625
+epoch: 226: train_loss: 1.081056384175535, train_acc: 0.3258928557236989, val_loss: 0.9647131562232971, val_acc: 0.546875
+epoch: 227: train_loss: 1.0809291978502835, train_acc: 0.3571428557236989, val_loss: 1.0039320290088654, val_acc: 0.40625
+epoch: 228: train_loss: 1.080558941874442, train_acc: 0.4642857114473979, val_loss: 0.9948093295097351, val_acc: 0.453125
+epoch: 229: train_loss: 1.0802642649498544, train_acc: 0.3764880994955699, val_loss: 1.0261985063552856, val_acc: 0.3125
+epoch: 230: train_loss: 1.0802718968618488, train_acc: 0.3363095223903656, val_loss: 0.9788540899753571, val_acc: 0.5
+epoch: 231: train_loss: 1.0799076946816228, train_acc: 0.4479166666666667, val_loss: 0.9806458652019501, val_acc: 0.5
+epoch: 232: train_loss: 1.0798526140241667, train_acc: 0.3363095223903656, val_loss: 1.0226826071739197, val_acc: 0.375
+epoch: 233: train_loss: 1.0795331790066856, train_acc: 0.4330357114473979, val_loss: 0.9834877550601959, val_acc: 0.515625
+epoch: 234: train_loss: 1.0795914796227262, train_acc: 0.2901785721381505, val_loss: 1.0068526864051819, val_acc: 0.421875
+epoch: 235: train_loss: 1.07949170049301, train_acc: 0.3601190447807312, val_loss: 1.0146485567092896, val_acc: 0.375
+epoch: 236: train_loss: 1.07935049698155, train_acc: 0.4017857114473979, val_loss: 0.9732314646244049, val_acc: 0.46875
+epoch: 237: train_loss: 1.0792723752203444, train_acc: 0.4598214228947957, val_loss: 1.0150023996829987, val_acc: 0.421875
+epoch: 238: train_loss: 1.0792484983406971, train_acc: 0.3392857114473979, val_loss: 0.9872487485408783, val_acc: 0.46875
+epoch: 239: train_loss: 1.0790791403088307, train_acc: 0.3794642885526021, val_loss: 1.0256560742855072, val_acc: 0.328125
+epoch: 240: train_loss: 1.0788690414006616, train_acc: 0.3839285671710968, val_loss: 0.9693168699741364, val_acc: 0.5625
+epoch: 241: train_loss: 1.0787254356812512, train_acc: 0.4375, val_loss: 1.0254549086093903, val_acc: 0.375
+epoch: 242: train_loss: 1.0786373867092474, train_acc: 0.3839285671710968, val_loss: 0.9804729521274567, val_acc: 0.46875
+epoch: 243: train_loss: 1.0785813908922217, train_acc: 0.3511904776096344, val_loss: 1.0100449919700623, val_acc: 0.375
+epoch: 244: train_loss: 1.0784582610843945, train_acc: 0.3883928557236989, val_loss: 0.9819294214248657, val_acc: 0.578125
+epoch: 245: train_loss: 1.0783321326018027, train_acc: 0.4017857114473979, val_loss: 0.98408043384552, val_acc: 0.453125
+epoch: 246: train_loss: 1.0779282512613315, train_acc: 0.4122023781140645, val_loss: 0.9790237545967102, val_acc: 0.609375
+epoch: 247: train_loss: 1.0777074566451452, train_acc: 0.3913690447807312, val_loss: 0.9621752500534058, val_acc: 0.546875
+epoch: 248: train_loss: 1.0771803437785772, train_acc: 0.4553571343421936, val_loss: 1.0086162686347961, val_acc: 0.40625
+epoch: 249: train_loss: 1.0767085875670115, train_acc: 0.5267857114473978, val_loss: 0.9965811371803284, val_acc: 0.40625
+epoch: 250: train_loss: 1.0765960234728151, train_acc: 0.3690476218859355, val_loss: 0.9694110155105591, val_acc: 0.546875
+epoch: 251: train_loss: 1.0764050694212082, train_acc: 0.3794642885526021, val_loss: 0.9900303184986115, val_acc: 0.421875
+epoch: 252: train_loss: 1.0764907015013914, train_acc: 0.3020833333333333, val_loss: 1.0151635706424713, val_acc: 0.375
+epoch: 253: train_loss: 1.0765055865440467, train_acc: 0.3497023781140645, val_loss: 0.9867192804813385, val_acc: 0.40625
+epoch: 254: train_loss: 1.0762932818699504, train_acc: 0.4151785671710968, val_loss: 0.9834457337856293, val_acc: 0.484375
+epoch: 255: train_loss: 1.0761788793994733, train_acc: 0.3660714328289032, val_loss: 1.0110188126564026, val_acc: 0.375
+epoch: 256: train_loss: 1.0759859061890538, train_acc: 0.4270833333333333, val_loss: 1.0065174400806427, val_acc: 0.4375
+epoch: 257: train_loss: 1.0757992631089162, train_acc: 0.4136904776096344, val_loss: 0.9870622158050537, val_acc: 0.484375
+epoch: 258: train_loss: 1.0756223758675414, train_acc: 0.3556547661622365, val_loss: 0.9837711453437805, val_acc: 0.5
+epoch: 259: train_loss: 1.0758151567899261, train_acc: 0.2708333333333333, val_loss: 0.9880328178405762, val_acc: 0.484375
+epoch: 260: train_loss: 1.0757262795059768, train_acc: 0.3690476218859355, val_loss: 1.0292157530784607, val_acc: 0.359375
+epoch: 261: train_loss: 1.0754954087673556, train_acc: 0.4017857114473979, val_loss: 0.9529138207435608, val_acc: 0.546875
+epoch: 262: train_loss: 1.0755720054695361, train_acc: 0.3020833333333333, val_loss: 0.9827643036842346, val_acc: 0.5625
+epoch: 263: train_loss: 1.075348181480711, train_acc: 0.4583333333333333, val_loss: 0.9813141822814941, val_acc: 0.53125
+epoch: 264: train_loss: 1.0754300532101084, train_acc: 0.2916666666666667, val_loss: 0.9863849878311157, val_acc: 0.46875
+epoch: 265: train_loss: 1.0753501008327742, train_acc: 0.3645833333333333, val_loss: 0.9841073155403137, val_acc: 0.53125
+epoch: 266: train_loss: 1.0752281266056494, train_acc: 0.3705357114473979, val_loss: 0.9883498549461365, val_acc: 0.53125
+epoch: 267: train_loss: 1.0750564357534569, train_acc: 0.3690476218859355, val_loss: 0.9821370840072632, val_acc: 0.515625
+epoch: 268: train_loss: 1.075002215165631, train_acc: 0.3705357114473979, val_loss: 0.9760793447494507, val_acc: 0.484375
+epoch: 269: train_loss: 1.0750191724594729, train_acc: 0.3645833333333333, val_loss: 1.0074453353881836, val_acc: 0.390625
+epoch: 270: train_loss: 1.0749455043017349, train_acc: 0.3928571442763011, val_loss: 0.9636782109737396, val_acc: 0.5625
+epoch: 271: train_loss: 1.0746984737468699, train_acc: 0.4404761989911397, val_loss: 0.9990267157554626, val_acc: 0.390625
+epoch: 272: train_loss: 1.0744016521288506, train_acc: 0.4479166666666667, val_loss: 0.9925448000431061, val_acc: 0.46875
+epoch: 273: train_loss: 1.0741299115973375, train_acc: 0.4434523781140645, val_loss: 0.9662322700023651, val_acc: 0.546875
+epoch: 274: train_loss: 1.0741944583979517, train_acc: 0.3035714328289032, val_loss: 1.0128154754638672, val_acc: 0.34375
+epoch: 275: train_loss: 1.0742952618477999, train_acc: 0.3005952388048172, val_loss: 0.9713665843009949, val_acc: 0.5625
+epoch: 276: train_loss: 1.0741563092213386, train_acc: 0.3601190447807312, val_loss: 0.9731481969356537, val_acc: 0.5
+epoch: 277: train_loss: 1.0737885739162956, train_acc: 0.4806547562281291, val_loss: 0.9640564918518066, val_acc: 0.578125
+epoch: 278: train_loss: 1.0738418524552986, train_acc: 0.2678571442763011, val_loss: 0.9753895103931427, val_acc: 0.484375
+epoch: 279: train_loss: 1.0734882126961434, train_acc: 0.4702380895614624, val_loss: 0.9780445694923401, val_acc: 0.59375
+epoch: 280: train_loss: 1.0731395261709091, train_acc: 0.4642857114473979, val_loss: 0.9615451395511627, val_acc: 0.578125
+epoch: 281: train_loss: 1.073084448809883, train_acc: 0.375, val_loss: 0.9826448559761047, val_acc: 0.546875
+epoch: 282: train_loss: 1.0728668168239794, train_acc: 0.4211309552192688, val_loss: 0.9878223836421967, val_acc: 0.65625
+epoch: 283: train_loss: 1.072709844006059, train_acc: 0.3913690447807312, val_loss: 1.0049508810043335, val_acc: 0.375
+epoch: 284: train_loss: 1.0725756062401663, train_acc: 0.4330357114473979, val_loss: 0.9767488539218903, val_acc: 0.609375
+epoch: 285: train_loss: 1.0723019675775005, train_acc: 0.4791666666666667, val_loss: 0.9822743833065033, val_acc: 0.453125
+epoch: 286: train_loss: 1.0719515772646726, train_acc: 0.4672619005044301, val_loss: 0.9343392848968506, val_acc: 0.671875
+epoch: 287: train_loss: 1.0718774345737916, train_acc: 0.3675595223903656, val_loss: 0.9985006153583527, val_acc: 0.484375
+epoch: 288: train_loss: 1.071602623011689, train_acc: 0.4955357114473979, val_loss: 0.9641673266887665, val_acc: 0.578125
+epoch: 289: train_loss: 1.0712125933718406, train_acc: 0.4479166666666667, val_loss: 0.9516894817352295, val_acc: 0.703125
+epoch: 290: train_loss: 1.0709308969605826, train_acc: 0.4375, val_loss: 0.9602891802787781, val_acc: 0.625
+epoch: 291: train_loss: 1.0707978440201988, train_acc: 0.4002976218859355, val_loss: 0.9700373709201813, val_acc: 0.609375
+epoch: 292: train_loss: 1.0706581975141618, train_acc: 0.4419642885526021, val_loss: 0.9767192006111145, val_acc: 0.59375
+epoch: 293: train_loss: 1.0706042809551264, train_acc: 0.3571428557236989, val_loss: 0.975635826587677, val_acc: 0.6875
+epoch: 294: train_loss: 1.0704841925599478, train_acc: 0.3556547661622365, val_loss: 0.9899123311042786, val_acc: 0.546875
+epoch: 295: train_loss: 1.0702994428910648, train_acc: 0.4211309552192688, val_loss: 0.9836170375347137, val_acc: 0.5625
+epoch: 296: train_loss: 1.0699718668137064, train_acc: 0.4985119005044301, val_loss: 0.9770825505256653, val_acc: 0.59375
+epoch: 297: train_loss: 1.0696885442440407, train_acc: 0.4821428656578064, val_loss: 0.9570892453193665, val_acc: 0.5625
+epoch: 298: train_loss: 1.069253714852774, train_acc: 0.5133928656578064, val_loss: 0.95872962474823, val_acc: 0.65625
+epoch: 299: train_loss: 1.069201178219583, train_acc: 0.375, val_loss: 0.9556985795497894, val_acc: 0.6875
+epoch: 300: train_loss: 1.0691218132592513, train_acc: 0.3779761890570323, val_loss: 0.9482166767120361, val_acc: 0.65625
+epoch: 301: train_loss: 1.0692273642185244, train_acc: 0.3035714328289032, val_loss: 0.9615603089332581, val_acc: 0.6875
+epoch: 302: train_loss: 1.0689693745737945, train_acc: 0.4776785671710968, val_loss: 0.9665521681308746, val_acc: 0.671875
+epoch: 303: train_loss: 1.0686800066839184, train_acc: 0.4449404776096344, val_loss: 0.9925756454467773, val_acc: 0.53125
+epoch: 304: train_loss: 1.0684906330264983, train_acc: 0.4553571442763011, val_loss: 0.9668834507465363, val_acc: 0.546875
+epoch: 305: train_loss: 1.0683807982598514, train_acc: 0.3854166666666667, val_loss: 0.9569447338581085, val_acc: 0.671875
+epoch: 306: train_loss: 1.0682311535011024, train_acc: 0.4241071442763011, val_loss: 0.9974900782108307, val_acc: 0.515625
+epoch: 307: train_loss: 1.0680937563186084, train_acc: 0.40625, val_loss: 0.9594250321388245, val_acc: 0.65625
+epoch: 308: train_loss: 1.067942130527064, train_acc: 0.4136904776096344, val_loss: 0.934226781129837, val_acc: 0.671875
+epoch: 309: train_loss: 1.0677913217775281, train_acc: 0.3764880895614624, val_loss: 0.987914651632309, val_acc: 0.546875
+epoch: 310: train_loss: 1.0675474036033767, train_acc: 0.4196428656578064, val_loss: 0.9664284288883209, val_acc: 0.578125
+epoch: 311: train_loss: 1.0671241952058594, train_acc: 0.5044642885526022, val_loss: 0.9729637503623962, val_acc: 0.515625
+epoch: 312: train_loss: 1.067051135186062, train_acc: 0.3377976218859355, val_loss: 0.9551920592784882, val_acc: 0.609375
+epoch: 313: train_loss: 1.066753459457632, train_acc: 0.4657738109429677, val_loss: 0.9580778181552887, val_acc: 0.671875
+epoch: 314: train_loss: 1.0666401805701076, train_acc: 0.3616071442763011, val_loss: 0.9744056761264801, val_acc: 0.6875
+epoch: 315: train_loss: 1.0664676743469155, train_acc: 0.3809523781140645, val_loss: 0.940688282251358, val_acc: 0.65625
+epoch: 316: train_loss: 1.066300408321224, train_acc: 0.3883928557236989, val_loss: 0.9537893831729889, val_acc: 0.75
+epoch: 317: train_loss: 1.0661734566248686, train_acc: 0.4107142885526021, val_loss: 0.9683115184307098, val_acc: 0.703125
+epoch: 318: train_loss: 1.0658992827872869, train_acc: 0.4657738109429677, val_loss: 0.9610742628574371, val_acc: 0.625
+epoch: 319: train_loss: 1.0657627509906886, train_acc: 0.3794642885526021, val_loss: 0.9391170144081116, val_acc: 0.671875
+epoch: 320: train_loss: 1.065539435867456, train_acc: 0.4494047661622365, val_loss: 0.9490019083023071, val_acc: 0.671875
+epoch: 321: train_loss: 1.0653504425077456, train_acc: 0.40625, val_loss: 0.9582469463348389, val_acc: 0.640625
+epoch: 322: train_loss: 1.0650627834509028, train_acc: 0.5208333333333334, val_loss: 0.9599668681621552, val_acc: 0.640625
+epoch: 323: train_loss: 1.0649393809185104, train_acc: 0.3928571442763011, val_loss: 0.9577210545539856, val_acc: 0.671875
+epoch: 324: train_loss: 1.0647375468107367, train_acc: 0.3794642885526021, val_loss: 0.9750971794128418, val_acc: 0.578125
+epoch: 325: train_loss: 1.0647324699687566, train_acc: 0.3348214328289032, val_loss: 0.9548675119876862, val_acc: 0.65625
+epoch: 326: train_loss: 1.064752274150148, train_acc: 0.3348214228947957, val_loss: 0.9642659425735474, val_acc: 0.671875
+epoch: 327: train_loss: 1.0646739302248487, train_acc: 0.3690476218859355, val_loss: 1.0063130259513855, val_acc: 0.40625
+epoch: 328: train_loss: 1.0645331676366236, train_acc: 0.3839285671710968, val_loss: 0.988588273525238, val_acc: 0.65625
+epoch: 329: train_loss: 1.0642040049788926, train_acc: 0.4851190447807312, val_loss: 0.9557344019412994, val_acc: 0.671875
+epoch: 330: train_loss: 1.0640245507971156, train_acc: 0.4761904776096344, val_loss: 0.97750324010849, val_acc: 0.75
+epoch: 331: train_loss: 1.0637643079322023, train_acc: 0.4627976218859355, val_loss: 0.9389060437679291, val_acc: 0.78125
+epoch: 332: train_loss: 1.0636382615482722, train_acc: 0.4226190447807312, val_loss: 0.9662382006645203, val_acc: 0.609375
+epoch: 333: train_loss: 1.0634379370840723, train_acc: 0.4955357114473979, val_loss: 0.9494518637657166, val_acc: 0.640625
+epoch: 334: train_loss: 1.0632152380041813, train_acc: 0.4657738109429677, val_loss: 0.941617876291275, val_acc: 0.640625
+epoch: 335: train_loss: 1.062987320952945, train_acc: 0.4657738109429677, val_loss: 0.9489934742450714, val_acc: 0.703125
+epoch: 336: train_loss: 1.0627767540344968, train_acc: 0.4672619005044301, val_loss: 0.9426964223384857, val_acc: 0.6875
+epoch: 337: train_loss: 1.0626606085361576, train_acc: 0.3958333333333333, val_loss: 0.9298098385334015, val_acc: 0.78125
+epoch: 338: train_loss: 1.062371205322393, train_acc: 0.4702380895614624, val_loss: 0.9343787133693695, val_acc: 0.71875
+epoch: 339: train_loss: 1.0621499539005987, train_acc: 0.4568452338377635, val_loss: 0.9885821640491486, val_acc: 0.625
+epoch: 340: train_loss: 1.0616980760794346, train_acc: 0.5520833333333334, val_loss: 0.9314239323139191, val_acc: 0.84375
+epoch: 341: train_loss: 1.0615114700956882, train_acc: 0.4449404776096344, val_loss: 0.9408953785896301, val_acc: 0.75
+epoch: 342: train_loss: 1.0614992404470636, train_acc: 0.3809523781140645, val_loss: 0.9426661431789398, val_acc: 0.734375
+epoch: 343: train_loss: 1.061275853378366, train_acc: 0.4806547562281291, val_loss: 0.9731918275356293, val_acc: 0.71875
+epoch: 344: train_loss: 1.0610068085113007, train_acc: 0.4672619005044301, val_loss: 0.9589922428131104, val_acc: 0.671875
+epoch: 345: train_loss: 1.0607122661176211, train_acc: 0.5163690447807312, val_loss: 0.9571966230869293, val_acc: 0.578125
+epoch: 346: train_loss: 1.0604794162838187, train_acc: 0.4627976218859355, val_loss: 0.9545842111110687, val_acc: 0.671875
+epoch: 347: train_loss: 1.06024870830249, train_acc: 0.4508928656578064, val_loss: 0.9341684281826019, val_acc: 0.71875
+epoch: 348: train_loss: 1.0600146849950152, train_acc: 0.5, val_loss: 0.9685753583908081, val_acc: 0.640625
+epoch: 349: train_loss: 1.0598697813351945, train_acc: 0.3913690447807312, val_loss: 0.9083031415939331, val_acc: 0.859375
+epoch: 350: train_loss: 1.059641519389827, train_acc: 0.4479166666666667, val_loss: 0.9489441514015198, val_acc: 0.78125
+epoch: 351: train_loss: 1.0593699964722896, train_acc: 0.46875, val_loss: 0.9351343214511871, val_acc: 0.78125
+epoch: 352: train_loss: 1.0592969641919623, train_acc: 0.4002976218859355, val_loss: 0.9356673657894135, val_acc: 0.734375
+epoch: 353: train_loss: 1.0591916696724466, train_acc: 0.46875, val_loss: 0.9485321044921875, val_acc: 0.796875
+epoch: 354: train_loss: 1.0591454326826637, train_acc: 0.3824404776096344, val_loss: 0.9783101975917816, val_acc: 0.671875
+epoch: 355: train_loss: 1.0588707331191285, train_acc: 0.4925595323244731, val_loss: 0.9546798169612885, val_acc: 0.71875
+epoch: 356: train_loss: 1.0587433729630333, train_acc: 0.4375, val_loss: 0.9389300644397736, val_acc: 0.8125
+epoch: 357: train_loss: 1.058478663975522, train_acc: 0.4702380895614624, val_loss: 0.9598611891269684, val_acc: 0.625
+epoch: 358: train_loss: 1.058309739180594, train_acc: 0.4955357114473979, val_loss: 0.9389544427394867, val_acc: 0.78125
+epoch: 359: train_loss: 1.0581170239382318, train_acc: 0.4226190447807312, val_loss: 0.9301083981990814, val_acc: 0.78125
+epoch: 360: train_loss: 1.0579328270610129, train_acc: 0.4613095323244731, val_loss: 0.9429724514484406, val_acc: 0.828125
+epoch: 361: train_loss: 1.0576273324191021, train_acc: 0.5104166666666666, val_loss: 0.929194837808609, val_acc: 0.859375
+epoch: 362: train_loss: 1.0573788652516374, train_acc: 0.4657738109429677, val_loss: 0.952308863401413, val_acc: 0.734375
+epoch: 363: train_loss: 1.0572849132748314, train_acc: 0.3794642885526021, val_loss: 0.9417866170406342, val_acc: 0.703125
+epoch: 364: train_loss: 1.0570743898822836, train_acc: 0.4940476218859355, val_loss: 0.9429415166378021, val_acc: 0.65625
+epoch: 365: train_loss: 1.0569813430635004, train_acc: 0.3958333333333333, val_loss: 0.9096829295158386, val_acc: 0.828125
+epoch: 366: train_loss: 1.05684325361555, train_acc: 0.4122023781140645, val_loss: 0.9315263628959656, val_acc: 0.828125
+epoch: 367: train_loss: 1.0566238925076914, train_acc: 0.4449404776096344, val_loss: 0.9626307189464569, val_acc: 0.765625
+epoch: 368: train_loss: 1.056454794193671, train_acc: 0.4538690447807312, val_loss: 0.9332040846347809, val_acc: 0.796875
+epoch: 369: train_loss: 1.0561412208252128, train_acc: 0.5267857114473978, val_loss: 0.9435283839702606, val_acc: 0.703125
+epoch: 370: train_loss: 1.055883404700904, train_acc: 0.4747023781140645, val_loss: 0.9464504718780518, val_acc: 0.75
+epoch: 371: train_loss: 1.0557716466940432, train_acc: 0.4315476218859355, val_loss: 0.9542740285396576, val_acc: 0.703125
+epoch: 372: train_loss: 1.0554608030442791, train_acc: 0.5029761989911398, val_loss: 0.9202956855297089, val_acc: 0.765625
+epoch: 373: train_loss: 1.055255274296657, train_acc: 0.5, val_loss: 0.9461954832077026, val_acc: 0.671875
+epoch: 374: train_loss: 1.0550867446263632, train_acc: 0.4657738109429677, val_loss: 0.9442176818847656, val_acc: 0.84375
+epoch: 375: train_loss: 1.0550649409175765, train_acc: 0.3720238109429677, val_loss: 0.953115850687027, val_acc: 0.75
+epoch: 376: train_loss: 1.0547541704565735, train_acc: 0.5401785771052042, val_loss: 0.9323821067810059, val_acc: 0.765625
+epoch: 377: train_loss: 1.0546005022378615, train_acc: 0.4776785671710968, val_loss: 0.9243291914463043, val_acc: 0.734375
+epoch: 378: train_loss: 1.0544649163881938, train_acc: 0.4017857114473979, val_loss: 0.9498309195041656, val_acc: 0.75
+epoch: 379: train_loss: 1.0543541636906173, train_acc: 0.4375, val_loss: 0.927491694688797, val_acc: 0.796875
+epoch: 380: train_loss: 1.054227810727851, train_acc: 0.4196428557236989, val_loss: 0.9513427019119263, val_acc: 0.6875
+epoch: 381: train_loss: 1.0540054965289682, train_acc: 0.5074404776096344, val_loss: 0.9301742017269135, val_acc: 0.703125
+epoch: 382: train_loss: 1.0536985792628157, train_acc: 0.4866071442763011, val_loss: 0.9256161749362946, val_acc: 0.71875
+epoch: 383: train_loss: 1.0536580723192956, train_acc: 0.3601190447807312, val_loss: 0.9308910965919495, val_acc: 0.796875
+epoch: 384: train_loss: 1.0534916779179595, train_acc: 0.4717261989911397, val_loss: 0.9515399634838104, val_acc: 0.578125
+epoch: 385: train_loss: 1.0533944181004131, train_acc: 0.3824404776096344, val_loss: 0.9525623619556427, val_acc: 0.6875
+epoch: 386: train_loss: 1.0530825286051202, train_acc: 0.555059532324473, val_loss: 0.9267743825912476, val_acc: 0.84375
+epoch: 387: train_loss: 1.0529287414964532, train_acc: 0.4226190447807312, val_loss: 0.9428411424160004, val_acc: 0.765625
+epoch: 388: train_loss: 1.0528327252687097, train_acc: 0.4136904776096344, val_loss: 0.9294496476650238, val_acc: 0.703125
+epoch: 389: train_loss: 1.0528592720500427, train_acc: 0.3154761890570323, val_loss: 0.9247471988201141, val_acc: 0.84375
+epoch: 390: train_loss: 1.0527322687659628, train_acc: 0.4345238109429677, val_loss: 0.8911848068237305, val_acc: 0.796875
+epoch: 391: train_loss: 1.0524075334879008, train_acc: 0.4985119005044301, val_loss: 0.9402197897434235, val_acc: 0.8125
+epoch: 392: train_loss: 1.0522375546136684, train_acc: 0.4404761890570323, val_loss: 0.9438650608062744, val_acc: 0.765625
+epoch: 393: train_loss: 1.0520615808653146, train_acc: 0.4553571442763011, val_loss: 0.9094989001750946, val_acc: 0.796875
+epoch: 394: train_loss: 1.0518941041286487, train_acc: 0.4642857114473979, val_loss: 0.9023909568786621, val_acc: 0.8125
+epoch: 395: train_loss: 1.051751199244249, train_acc: 0.4761904776096344, val_loss: 0.9400769770145416, val_acc: 0.6875
+epoch: 396: train_loss: 1.0516917625962938, train_acc: 0.3779761890570323, val_loss: 0.967370480298996, val_acc: 0.703125
+epoch: 397: train_loss: 1.051412832697033, train_acc: 0.5223214228947958, val_loss: 0.9080874025821686, val_acc: 0.859375
+epoch: 398: train_loss: 1.0511688559176828, train_acc: 0.4866071442763011, val_loss: 0.9332770705223083, val_acc: 0.859375
+epoch: 399: train_loss: 1.05107318152984, train_acc: 0.4077380994955699, val_loss: 0.9430128037929535, val_acc: 0.78125
+epoch: 400: train_loss: 1.050943582828899, train_acc: 0.4136904776096344, val_loss: 0.9280231595039368, val_acc: 0.765625
+epoch: 401: train_loss: 1.0507395743928345, train_acc: 0.4880952338377635, val_loss: 0.9207073152065277, val_acc: 0.734375
+epoch: 402: train_loss: 1.0506631249825358, train_acc: 0.4002976218859355, val_loss: 0.8909141421318054, val_acc: 0.796875
+epoch: 403: train_loss: 1.0504568320493102, train_acc: 0.4910714228947957, val_loss: 0.9019741714000702, val_acc: 0.796875
+epoch: 404: train_loss: 1.0502598518697326, train_acc: 0.4464285671710968, val_loss: 0.9074166715145111, val_acc: 0.78125
+epoch: 405: train_loss: 1.0500368662851396, train_acc: 0.5104166666666666, val_loss: 0.954779714345932, val_acc: 0.671875
+epoch: 406: train_loss: 1.049941006495658, train_acc: 0.4241071442763011, val_loss: 0.9418155252933502, val_acc: 0.6875
+epoch: 407: train_loss: 1.0497101855044273, train_acc: 0.5014880895614624, val_loss: 0.9025057852268219, val_acc: 0.828125
+epoch: 408: train_loss: 1.0496464943924666, train_acc: 0.3988095223903656, val_loss: 0.9249140024185181, val_acc: 0.828125
+epoch: 409: train_loss: 1.0495646202951914, train_acc: 0.3720238109429677, val_loss: 0.9623366594314575, val_acc: 0.703125
+epoch: 410: train_loss: 1.0492876488216893, train_acc: 0.5877976218859354, val_loss: 0.9771842658519745, val_acc: 0.65625
+epoch: 411: train_loss: 1.0491311633085356, train_acc: 0.4255952338377635, val_loss: 0.8931649327278137, val_acc: 0.890625
+epoch: 412: train_loss: 1.048928373806702, train_acc: 0.4985119005044301, val_loss: 0.9257303476333618, val_acc: 0.90625
+epoch: 413: train_loss: 1.04874040035234, train_acc: 0.4776785671710968, val_loss: 0.9707516133785248, val_acc: 0.609375
+epoch: 414: train_loss: 1.0487086008351492, train_acc: 0.4136904776096344, val_loss: 0.938693106174469, val_acc: 0.6875
+epoch: 415: train_loss: 1.0485870622289488, train_acc: 0.4315476218859355, val_loss: 0.9111865758895874, val_acc: 0.875
+epoch: 416: train_loss: 1.0483703207340747, train_acc: 0.4761904776096344, val_loss: 0.929365336894989, val_acc: 0.734375
+epoch: 417: train_loss: 1.0480493444955332, train_acc: 0.5357142885526022, val_loss: 0.952113687992096, val_acc: 0.796875
+epoch: 418: train_loss: 1.0476630413067562, train_acc: 0.5997023781140646, val_loss: 0.9406416714191437, val_acc: 0.875
+epoch: 419: train_loss: 1.0476061724481132, train_acc: 0.4226190447807312, val_loss: 0.9361858367919922, val_acc: 0.8125
+epoch: 420: train_loss: 1.0475997768124232, train_acc: 0.3348214328289032, val_loss: 0.913320392370224, val_acc: 0.890625
+epoch: 421: train_loss: 1.047400230621275, train_acc: 0.4895833333333333, val_loss: 0.9295949637889862, val_acc: 0.75
+epoch: 422: train_loss: 1.0471529945602, train_acc: 0.4895833333333333, val_loss: 0.9355095326900482, val_acc: 0.78125
+epoch: 423: train_loss: 1.0470076544479756, train_acc: 0.4568452338377635, val_loss: 0.9171837866306305, val_acc: 0.78125
+epoch: 424: train_loss: 1.0466140237041552, train_acc: 0.5758928656578064, val_loss: 0.888402670621872, val_acc: 0.859375
+epoch: 425: train_loss: 1.0462729984512542, train_acc: 0.5967261989911398, val_loss: 0.9365448355674744, val_acc: 0.875
+epoch: 426: train_loss: 1.0461037654973495, train_acc: 0.4806547562281291, val_loss: 0.893625408411026, val_acc: 0.8125
+epoch: 427: train_loss: 1.046013567585069, train_acc: 0.3764880994955699, val_loss: 0.8958571553230286, val_acc: 0.828125
+epoch: 428: train_loss: 1.0457555130645115, train_acc: 0.53125, val_loss: 0.9063490629196167, val_acc: 0.875
+epoch: 429: train_loss: 1.0456066925396295, train_acc: 0.4747023781140645, val_loss: 0.8900658488273621, val_acc: 0.90625
+epoch: 430: train_loss: 1.045379468386061, train_acc: 0.5327380895614624, val_loss: 0.9174409210681915, val_acc: 0.875
+epoch: 431: train_loss: 1.0452530381304248, train_acc: 0.4107142885526021, val_loss: 0.9172562956809998, val_acc: 0.734375
+epoch: 432: train_loss: 1.0449827849819078, train_acc: 0.5773809552192688, val_loss: 0.8795514702796936, val_acc: 0.90625
+epoch: 433: train_loss: 1.044745675933343, train_acc: 0.4821428656578064, val_loss: 0.8981021344661713, val_acc: 0.75
+epoch: 434: train_loss: 1.044567469025024, train_acc: 0.4657738109429677, val_loss: 0.9366423785686493, val_acc: 0.78125
+epoch: 435: train_loss: 1.044415633202693, train_acc: 0.4360119005044301, val_loss: 0.9038933515548706, val_acc: 0.859375
+epoch: 436: train_loss: 1.0442469512388783, train_acc: 0.4494047562281291, val_loss: 0.9065240025520325, val_acc: 0.859375
+epoch: 437: train_loss: 1.044074202010258, train_acc: 0.4657738109429677, val_loss: 0.9240583777427673, val_acc: 0.75
+epoch: 438: train_loss: 1.0438990483432447, train_acc: 0.4747023781140645, val_loss: 0.9368536174297333, val_acc: 0.75
+epoch: 439: train_loss: 1.04378430427927, train_acc: 0.4553571442763011, val_loss: 0.9377545118331909, val_acc: 0.8125
+epoch: 440: train_loss: 1.0436019138774457, train_acc: 0.4375, val_loss: 0.9160512685775757, val_acc: 0.84375
+epoch: 441: train_loss: 1.0433472967615318, train_acc: 0.5476190447807312, val_loss: 0.9209210276603699, val_acc: 0.828125
+epoch: 442: train_loss: 1.0429285453440467, train_acc: 0.5967261989911398, val_loss: 0.9016782343387604, val_acc: 0.84375
+epoch: 443: train_loss: 1.042816206633866, train_acc: 0.4776785671710968, val_loss: 0.9032714366912842, val_acc: 0.8125
+epoch: 444: train_loss: 1.04255053206776, train_acc: 0.5044642885526022, val_loss: 0.9038442373275757, val_acc: 0.828125
+epoch: 445: train_loss: 1.0422611407634925, train_acc: 0.5252976218859354, val_loss: 0.9111315011978149, val_acc: 0.84375
+epoch: 446: train_loss: 1.0419829393126556, train_acc: 0.5193452338377634, val_loss: 0.894322544336319, val_acc: 0.921875
+epoch: 447: train_loss: 1.0417844242904162, train_acc: 0.4985119005044301, val_loss: 0.9400058388710022, val_acc: 0.75
+epoch: 448: train_loss: 1.0415648305601959, train_acc: 0.4553571442763011, val_loss: 0.8929281234741211, val_acc: 0.859375
+epoch: 449: train_loss: 1.0412891194555498, train_acc: 0.5461309552192688, val_loss: 0.8899411559104919, val_acc: 0.890625
+epoch: 450: train_loss: 1.0411937124448978, train_acc: 0.4211309552192688, val_loss: 0.8766710162162781, val_acc: 0.890625
+epoch: 451: train_loss: 1.0410052037256659, train_acc: 0.46875, val_loss: 0.8855755627155304, val_acc: 0.875
+epoch: 452: train_loss: 1.0408475695066897, train_acc: 0.5208333333333334, val_loss: 0.9025843441486359, val_acc: 0.859375
+epoch: 453: train_loss: 1.0407275798649869, train_acc: 0.46875, val_loss: 0.8835678398609161, val_acc: 0.8125
+epoch: 454: train_loss: 1.0406831640900276, train_acc: 0.3764880994955699, val_loss: 0.9583319425582886, val_acc: 0.703125
+epoch: 455: train_loss: 1.0404191876364037, train_acc: 0.5342261890570322, val_loss: 0.9356389343738556, val_acc: 0.765625
+epoch: 456: train_loss: 1.040139008620462, train_acc: 0.5163690447807312, val_loss: 0.9078242778778076, val_acc: 0.90625
+epoch: 457: train_loss: 1.039776775644336, train_acc: 0.5788690447807312, val_loss: 0.9007465541362762, val_acc: 0.9375
+epoch: 458: train_loss: 1.0394794934888467, train_acc: 0.5773809552192688, val_loss: 0.9071049392223358, val_acc: 0.859375
+epoch: 459: train_loss: 1.039210527703382, train_acc: 0.5104166666666666, val_loss: 0.9065861403942108, val_acc: 0.796875
+epoch: 460: train_loss: 1.0388853166384364, train_acc: 0.5610119005044302, val_loss: 0.9301778078079224, val_acc: 0.796875
+epoch: 461: train_loss: 1.038769757635838, train_acc: 0.4345238109429677, val_loss: 0.8989960551261902, val_acc: 0.859375
+epoch: 462: train_loss: 1.038522591386621, train_acc: 0.517857144276301, val_loss: 0.9037973284721375, val_acc: 0.828125
+epoch: 463: train_loss: 1.0382922417216605, train_acc: 0.5282738109429678, val_loss: 0.89047771692276, val_acc: 0.9375
+epoch: 464: train_loss: 1.0380795592048264, train_acc: 0.4880952338377635, val_loss: 0.8825460076332092, val_acc: 0.90625
+epoch: 465: train_loss: 1.0378836229635413, train_acc: 0.4910714228947957, val_loss: 0.9278035461902618, val_acc: 0.796875
+epoch: 466: train_loss: 1.0376676839219938, train_acc: 0.5133928656578064, val_loss: 0.9097006916999817, val_acc: 0.875
+epoch: 467: train_loss: 1.037389871146944, train_acc: 0.53125, val_loss: 0.8903745710849762, val_acc: 0.875
+epoch: 468: train_loss: 1.0372782104305116, train_acc: 0.4285714228947957, val_loss: 0.9086066484451294, val_acc: 0.890625
+epoch: 469: train_loss: 1.0370790538635661, train_acc: 0.5014880895614624, val_loss: 0.9184143841266632, val_acc: 0.78125
+epoch: 470: train_loss: 1.0369313110802418, train_acc: 0.4583333333333333, val_loss: 0.9275274872779846, val_acc: 0.875
+epoch: 471: train_loss: 1.0367571774680737, train_acc: 0.4910714228947957, val_loss: 0.8893513381481171, val_acc: 0.859375
+epoch: 472: train_loss: 1.0364821984198334, train_acc: 0.5223214228947958, val_loss: 0.9005312025547028, val_acc: 0.890625
+epoch: 473: train_loss: 1.0363639114442926, train_acc: 0.4196428557236989, val_loss: 0.9162550568580627, val_acc: 0.875
+epoch: 474: train_loss: 1.0361157137050965, train_acc: 0.5044642885526022, val_loss: 0.9041019082069397, val_acc: 0.859375
+epoch: 475: train_loss: 1.035871729880822, train_acc: 0.5446428656578064, val_loss: 0.8819326162338257, val_acc: 0.890625
+epoch: 476: train_loss: 1.0357082384937215, train_acc: 0.4702380895614624, val_loss: 0.8930358290672302, val_acc: 0.8125
+epoch: 477: train_loss: 1.0353781404688105, train_acc: 0.6145833333333334, val_loss: 0.8854594230651855, val_acc: 0.921875
+epoch: 478: train_loss: 1.0351749388144593, train_acc: 0.4806547562281291, val_loss: 0.938397228717804, val_acc: 0.6875
+epoch: 479: train_loss: 1.0349487851477333, train_acc: 0.5029761989911398, val_loss: 0.8713766932487488, val_acc: 0.9375
+epoch: 480: train_loss: 1.0348797578904172, train_acc: 0.3913690447807312, val_loss: 0.9373792707920074, val_acc: 0.828125
+epoch: 481: train_loss: 1.0346910095725979, train_acc: 0.4747023781140645, val_loss: 0.8765862882137299, val_acc: 0.9375
+epoch: 482: train_loss: 1.03439041752088, train_acc: 0.5625, val_loss: 0.904265969991684, val_acc: 0.828125
+epoch: 483: train_loss: 1.034237639552634, train_acc: 0.4553571442763011, val_loss: 0.8829460442066193, val_acc: 0.875
+epoch: 484: train_loss: 1.033858210606264, train_acc: 0.6339285771052042, val_loss: 0.898116260766983, val_acc: 0.953125
+epoch: 485: train_loss: 1.0336805435283358, train_acc: 0.5208333333333334, val_loss: 0.9209191501140594, val_acc: 0.796875
+epoch: 486: train_loss: 1.033376474155293, train_acc: 0.550595243771871, val_loss: 0.9001688361167908, val_acc: 0.875
+epoch: 487: train_loss: 1.0331638196452722, train_acc: 0.4776785671710968, val_loss: 0.9006507694721222, val_acc: 0.9375
+epoch: 488: train_loss: 1.0329556600854117, train_acc: 0.5327380895614624, val_loss: 0.8723486065864563, val_acc: 0.84375
+epoch: 489: train_loss: 1.0327233477920092, train_acc: 0.53125, val_loss: 0.9034867584705353, val_acc: 0.75
+epoch: 490: train_loss: 1.032584502190372, train_acc: 0.4776785671710968, val_loss: 0.8826190829277039, val_acc: 0.890625
+epoch: 491: train_loss: 1.0324083612297934, train_acc: 0.4761904776096344, val_loss: 0.9014253616333008, val_acc: 0.875
+epoch: 492: train_loss: 1.0322291574581322, train_acc: 0.4836309552192688, val_loss: 0.8927571773529053, val_acc: 0.921875
+epoch: 493: train_loss: 1.031999664509345, train_acc: 0.5535714228947958, val_loss: 0.8950789868831635, val_acc: 0.890625
+epoch: 494: train_loss: 1.0317253216749893, train_acc: 0.538690467675527, val_loss: 0.8744518756866455, val_acc: 0.90625
+epoch: 495: train_loss: 1.031630360951988, train_acc: 0.4255952338377635, val_loss: 0.8874198496341705, val_acc: 0.859375
+epoch: 496: train_loss: 1.031313522440887, train_acc: 0.5877976218859354, val_loss: 0.9059596359729767, val_acc: 0.875
+epoch: 497: train_loss: 1.0310752033150021, train_acc: 0.555059532324473, val_loss: 0.8708126842975616, val_acc: 0.921875
+epoch: 498: train_loss: 1.0308934403962906, train_acc: 0.4598214228947957, val_loss: 0.899720311164856, val_acc: 0.78125
+epoch: 499: train_loss: 1.0307373072306316, train_acc: 0.5, val_loss: 0.8839932084083557, val_acc: 0.9375
+epoch: 500: train_loss: 1.0305630626158166, train_acc: 0.5223214228947958, val_loss: 0.9004683494567871, val_acc: 0.90625
+epoch: 501: train_loss: 1.030419608867501, train_acc: 0.4434523781140645, val_loss: 0.9051674604415894, val_acc: 0.875
+epoch: 502: train_loss: 1.0301944998576202, train_acc: 0.5267857114473978, val_loss: 0.906107485294342, val_acc: 0.890625
+epoch: 503: train_loss: 1.0299981686252138, train_acc: 0.511904756228129, val_loss: 0.8629375994205475, val_acc: 0.953125
+epoch: 504: train_loss: 1.0297981432955654, train_acc: 0.5029761989911398, val_loss: 0.9057849943637848, val_acc: 0.71875
+epoch: 505: train_loss: 1.029602610389549, train_acc: 0.4642857114473979, val_loss: 0.8678240776062012, val_acc: 0.953125
+epoch: 506: train_loss: 1.029309610604143, train_acc: 0.574404756228129, val_loss: 0.8626464903354645, val_acc: 0.9375
+epoch: 507: train_loss: 1.0291231185041392, train_acc: 0.4880952338377635, val_loss: 0.8775555193424225, val_acc: 0.921875
+epoch: 508: train_loss: 1.028893633379059, train_acc: 0.523809532324473, val_loss: 0.9172307550907135, val_acc: 0.8125
+epoch: 509: train_loss: 1.0288349471061062, train_acc: 0.4226190447807312, val_loss: 0.8985175788402557, val_acc: 0.890625
+epoch: 510: train_loss: 1.028585532678939, train_acc: 0.5461309552192688, val_loss: 0.8883345723152161, val_acc: 0.8125
+epoch: 511: train_loss: 1.0283613904224091, train_acc: 0.5133928656578064, val_loss: 0.8739497065544128, val_acc: 0.953125
+epoch: 512: train_loss: 1.028128538292829, train_acc: 0.5297619005044302, val_loss: 0.8662069737911224, val_acc: 0.921875
+epoch: 513: train_loss: 1.028048773065461, train_acc: 0.3988095223903656, val_loss: 0.937674343585968, val_acc: 0.75
+epoch: 514: train_loss: 1.027888874212901, train_acc: 0.4880952338377635, val_loss: 0.9056041538715363, val_acc: 0.921875
+epoch: 515: train_loss: 1.0277909760481323, train_acc: 0.4404761890570323, val_loss: 0.87863489985466, val_acc: 0.828125
+epoch: 516: train_loss: 1.0276751345315343, train_acc: 0.4523809552192688, val_loss: 0.8936519622802734, val_acc: 0.875
+epoch: 517: train_loss: 1.0274040157040116, train_acc: 0.5282738010088602, val_loss: 0.9070142507553101, val_acc: 0.8125
+epoch: 518: train_loss: 1.0271378269008744, train_acc: 0.5282738109429678, val_loss: 0.8851618468761444, val_acc: 0.84375
+epoch: 519: train_loss: 1.0269733934066239, train_acc: 0.4866071442763011, val_loss: 0.8575349748134613, val_acc: 0.890625
+epoch: 520: train_loss: 1.0266615508156414, train_acc: 0.5877976218859354, val_loss: 0.8825407326221466, val_acc: 0.9375
+epoch: 521: train_loss: 1.026474434982315, train_acc: 0.5089285671710968, val_loss: 0.8849814236164093, val_acc: 0.859375
+epoch: 522: train_loss: 1.0263602640919054, train_acc: 0.4300595223903656, val_loss: 0.8505473136901855, val_acc: 0.875
+epoch: 523: train_loss: 1.026085507323724, train_acc: 0.555059532324473, val_loss: 0.8667657971382141, val_acc: 0.875
+epoch: 524: train_loss: 1.0258368792609567, train_acc: 0.5342261989911398, val_loss: 0.8704962730407715, val_acc: 0.9375
+epoch: 525: train_loss: 1.0257443939022846, train_acc: 0.4508928656578064, val_loss: 0.9007390439510345, val_acc: 0.84375
+epoch: 526: train_loss: 1.0256187060375446, train_acc: 0.4702380895614624, val_loss: 0.8442917168140411, val_acc: 0.859375
+epoch: 527: train_loss: 1.0254548730498014, train_acc: 0.46875, val_loss: 0.8786966502666473, val_acc: 0.875
+epoch: 528: train_loss: 1.0252014111255656, train_acc: 0.5223214228947958, val_loss: 0.8736514449119568, val_acc: 0.875
+epoch: 529: train_loss: 1.025057291722148, train_acc: 0.4494047661622365, val_loss: 0.8979864418506622, val_acc: 0.875
+epoch: 530: train_loss: 1.0248083113426696, train_acc: 0.5327380895614624, val_loss: 0.876459002494812, val_acc: 0.890625
+epoch: 531: train_loss: 1.0246131198672128, train_acc: 0.4866071442763011, val_loss: 0.9081648290157318, val_acc: 0.890625
+epoch: 532: train_loss: 1.0244592461010458, train_acc: 0.4672619005044301, val_loss: 0.8808383941650391, val_acc: 0.828125
+epoch: 533: train_loss: 1.0241758915294574, train_acc: 0.601190467675527, val_loss: 0.8735225200653076, val_acc: 0.90625
+epoch: 534: train_loss: 1.0240313989722472, train_acc: 0.4479166666666667, val_loss: 0.9039004147052765, val_acc: 0.90625
+epoch: 535: train_loss: 1.0237899133889239, train_acc: 0.5416666666666666, val_loss: 0.8786901831626892, val_acc: 0.890625
+epoch: 536: train_loss: 1.0236474527919022, train_acc: 0.4657738109429677, val_loss: 0.8464695811271667, val_acc: 0.96875
+epoch: 537: train_loss: 1.0233341819217807, train_acc: 0.605654756228129, val_loss: 0.8598899841308594, val_acc: 0.953125
+epoch: 538: train_loss: 1.0231956887112479, train_acc: 0.4791666666666667, val_loss: 0.852889209985733, val_acc: 0.921875
+epoch: 539: train_loss: 1.0229708468104588, train_acc: 0.5178571343421936, val_loss: 0.8833507597446442, val_acc: 0.875
+epoch: 540: train_loss: 1.0228021124300954, train_acc: 0.4494047562281291, val_loss: 0.8637039363384247, val_acc: 0.875
+epoch: 541: train_loss: 1.0225711004833749, train_acc: 0.5208333333333334, val_loss: 0.8589431345462799, val_acc: 0.875
+epoch: 542: train_loss: 1.0223966870225962, train_acc: 0.5208333333333334, val_loss: 0.9002777338027954, val_acc: 0.90625
+epoch: 543: train_loss: 1.0222728333855962, train_acc: 0.4360119005044301, val_loss: 0.8823566436767578, val_acc: 0.90625
+epoch: 544: train_loss: 1.022085022780509, train_acc: 0.511904756228129, val_loss: 0.8842673301696777, val_acc: 0.859375
+epoch: 545: train_loss: 1.0219290515951478, train_acc: 0.5074404776096344, val_loss: 0.8596824705600739, val_acc: 0.9375
+epoch: 546: train_loss: 1.02169824180481, train_acc: 0.5803571343421936, val_loss: 0.867498517036438, val_acc: 0.875
+epoch: 547: train_loss: 1.0215164534656962, train_acc: 0.4806547661622365, val_loss: 0.8684048056602478, val_acc: 0.84375
+epoch: 548: train_loss: 1.021251139889794, train_acc: 0.5684523781140646, val_loss: 0.8615125715732574, val_acc: 0.890625
+epoch: 549: train_loss: 1.020969918352185, train_acc: 0.5773809552192688, val_loss: 0.8518398404121399, val_acc: 0.8125
+epoch: 550: train_loss: 1.0208170253510773, train_acc: 0.4821428656578064, val_loss: 0.8885838091373444, val_acc: 0.796875
+epoch: 551: train_loss: 1.020757744745644, train_acc: 0.4122023781140645, val_loss: 0.8628717064857483, val_acc: 0.859375
+epoch: 552: train_loss: 1.0205743190680305, train_acc: 0.4985119005044301, val_loss: 0.9026221036911011, val_acc: 0.84375
+epoch: 553: train_loss: 1.0204014849504983, train_acc: 0.4732142885526021, val_loss: 0.8700768351554871, val_acc: 0.859375
+epoch: 554: train_loss: 1.0202137141614347, train_acc: 0.5208333333333334, val_loss: 0.8626480996608734, val_acc: 0.875
+epoch: 555: train_loss: 1.0199653453749717, train_acc: 0.549107144276301, val_loss: 0.8482943773269653, val_acc: 0.890625
+epoch: 556: train_loss: 1.0197889620069256, train_acc: 0.4940476218859355, val_loss: 0.853950560092926, val_acc: 0.859375
+epoch: 557: train_loss: 1.0196389966113593, train_acc: 0.4538690447807312, val_loss: 0.8743113279342651, val_acc: 0.875
+epoch: 558: train_loss: 1.019372926521813, train_acc: 0.5684523781140646, val_loss: 0.8507014513015747, val_acc: 0.984375
+epoch: 559: train_loss: 1.0191378821929296, train_acc: 0.5416666666666666, val_loss: 0.8253532350063324, val_acc: 0.90625
+epoch: 560: train_loss: 1.019067161294299, train_acc: 0.4047619005044301, val_loss: 0.8507668673992157, val_acc: 0.953125
+epoch: 561: train_loss: 1.018839501931574, train_acc: 0.5342261989911398, val_loss: 0.8774037957191467, val_acc: 0.890625
+epoch: 562: train_loss: 1.0185583043973638, train_acc: 0.5788690447807312, val_loss: 0.8872751295566559, val_acc: 0.859375
+epoch: 563: train_loss: 1.0183808967013166, train_acc: 0.523809532324473, val_loss: 0.8502143025398254, val_acc: 0.890625
+epoch: 564: train_loss: 1.0181100908282232, train_acc: 0.5773809552192688, val_loss: 0.8553351163864136, val_acc: 0.96875
+epoch: 565: train_loss: 1.0179145079198237, train_acc: 0.5089285671710968, val_loss: 0.8553781807422638, val_acc: 0.875
+epoch: 566: train_loss: 1.0177128145724168, train_acc: 0.5, val_loss: 0.8475883305072784, val_acc: 0.921875
+epoch: 567: train_loss: 1.01756544757477, train_acc: 0.4880952338377635, val_loss: 0.8538744449615479, val_acc: 0.953125
+epoch: 568: train_loss: 1.0173446052452941, train_acc: 0.5416666666666666, val_loss: 0.8724549412727356, val_acc: 0.9375
+epoch: 569: train_loss: 1.0171059304510641, train_acc: 0.53125, val_loss: 0.8415341377258301, val_acc: 0.953125
+epoch: 570: train_loss: 1.0169546670267893, train_acc: 0.4375, val_loss: 0.855562299489975, val_acc: 0.8125
+epoch: 571: train_loss: 1.0167661468326907, train_acc: 0.4806547562281291, val_loss: 0.8541573286056519, val_acc: 0.90625
+epoch: 572: train_loss: 1.0165443541769237, train_acc: 0.549107144276301, val_loss: 0.8561089634895325, val_acc: 0.953125
+epoch: 573: train_loss: 1.0164678554017093, train_acc: 0.3869047562281291, val_loss: 0.8542268872261047, val_acc: 0.90625
+epoch: 574: train_loss: 1.0162521994977758, train_acc: 0.5297619005044302, val_loss: 0.8779344856739044, val_acc: 0.84375
+epoch: 575: train_loss: 1.0159518174413178, train_acc: 0.5892857114473978, val_loss: 0.852300226688385, val_acc: 0.953125
+epoch: 576: train_loss: 1.0158087780611973, train_acc: 0.5, val_loss: 0.8827842772006989, val_acc: 0.875
+epoch: 577: train_loss: 1.0155235248797219, train_acc: 0.5729166666666666, val_loss: 0.8398517966270447, val_acc: 0.890625
+epoch: 578: train_loss: 1.015432782672779, train_acc: 0.4657738109429677, val_loss: 0.8490793406963348, val_acc: 0.953125
+epoch: 579: train_loss: 1.0152734558815244, train_acc: 0.4895833333333333, val_loss: 0.8590395152568817, val_acc: 0.921875
+epoch: 580: train_loss: 1.0151893278681132, train_acc: 0.4270833333333333, val_loss: 0.8338108360767365, val_acc: 0.9375
+epoch: 581: train_loss: 1.0149140086575474, train_acc: 0.5892857114473978, val_loss: 0.8513959050178528, val_acc: 0.953125
+epoch: 582: train_loss: 1.0147257228453819, train_acc: 0.5029761989911398, val_loss: 0.8756301999092102, val_acc: 0.828125
+epoch: 583: train_loss: 1.0145709279533393, train_acc: 0.4657738109429677, val_loss: 0.8596902191638947, val_acc: 0.84375
+epoch: 584: train_loss: 1.0142351029944896, train_acc: 0.5997023781140646, val_loss: 0.8286572098731995, val_acc: 0.9375
+epoch: 585: train_loss: 1.013992306247642, train_acc: 0.5565476218859354, val_loss: 0.8567586839199066, val_acc: 0.90625
+epoch: 586: train_loss: 1.0138206465010073, train_acc: 0.5208333333333334, val_loss: 0.8157027661800385, val_acc: 0.921875
+epoch: 587: train_loss: 1.0135795489933486, train_acc: 0.5342261989911398, val_loss: 0.8532599806785583, val_acc: 0.90625
+epoch: 588: train_loss: 1.013346237521018, train_acc: 0.5520833333333334, val_loss: 0.8461006581783295, val_acc: 0.953125
+epoch: 589: train_loss: 1.0131414960333185, train_acc: 0.5357142885526022, val_loss: 0.8517817854881287, val_acc: 0.953125
+epoch: 590: train_loss: 1.0129910736385204, train_acc: 0.4851190447807312, val_loss: 0.818225234746933, val_acc: 0.953125
+epoch: 591: train_loss: 1.0128887554479615, train_acc: 0.4434523781140645, val_loss: 0.824975460767746, val_acc: 0.890625
+epoch: 592: train_loss: 1.0127087296094035, train_acc: 0.4910714228947957, val_loss: 0.8356041312217712, val_acc: 0.9375
+epoch: 593: train_loss: 1.0125078009702815, train_acc: 0.5297619005044302, val_loss: 0.8316757380962372, val_acc: 0.890625
+epoch: 594: train_loss: 1.0123466072630152, train_acc: 0.4583333333333333, val_loss: 0.8699978888034821, val_acc: 0.953125
+epoch: 595: train_loss: 1.012151826014722, train_acc: 0.5401785671710968, val_loss: 0.8638545274734497, val_acc: 0.875
+epoch: 596: train_loss: 1.0119975695458294, train_acc: 0.5014880895614624, val_loss: 0.8382878005504608, val_acc: 0.96875
+epoch: 597: train_loss: 1.0119390722899937, train_acc: 0.4330357114473979, val_loss: 0.8469848334789276, val_acc: 0.953125
+epoch: 598: train_loss: 1.0117586958587474, train_acc: 0.4806547562281291, val_loss: 0.8174597322940826, val_acc: 0.953125
+epoch: 599: train_loss: 1.011515839464135, train_acc: 0.5327380895614624, val_loss: 0.8453366756439209, val_acc: 0.9375
+epoch: 600: train_loss: 1.0113083181021552, train_acc: 0.4910714228947957, val_loss: 0.8623588979244232, val_acc: 0.9375
+epoch: 601: train_loss: 1.0111703544624098, train_acc: 0.4672619005044301, val_loss: 0.8708971738815308, val_acc: 0.859375
+epoch: 602: train_loss: 1.0110198231347038, train_acc: 0.4464285671710968, val_loss: 0.859186977148056, val_acc: 0.828125
+epoch: 603: train_loss: 1.0109491969312794, train_acc: 0.4464285671710968, val_loss: 0.8180622458457947, val_acc: 0.953125
+epoch: 604: train_loss: 1.0106597653762044, train_acc: 0.5580357114473978, val_loss: 0.8579400479793549, val_acc: 0.890625
+epoch: 605: train_loss: 1.0105301914500986, train_acc: 0.4434523781140645, val_loss: 0.8292456865310669, val_acc: 0.9375
+epoch: 606: train_loss: 1.010288715460745, train_acc: 0.543154756228129, val_loss: 0.8795976936817169, val_acc: 0.828125
+epoch: 607: train_loss: 1.0100484358048758, train_acc: 0.5297619005044302, val_loss: 0.8456825911998749, val_acc: 0.796875
+epoch: 608: train_loss: 1.0098826508412422, train_acc: 0.4985119005044301, val_loss: 0.84087735414505, val_acc: 0.8125
+epoch: 609: train_loss: 1.0096362850705136, train_acc: 0.5788690447807312, val_loss: 0.8424384593963623, val_acc: 0.921875
+epoch: 610: train_loss: 1.0095011218610002, train_acc: 0.4910714228947957, val_loss: 0.8566479980945587, val_acc: 0.875
+epoch: 611: train_loss: 1.0092716118349236, train_acc: 0.5669642885526022, val_loss: 0.8459182977676392, val_acc: 0.953125
+epoch: 612: train_loss: 1.0089557932212738, train_acc: 0.6339285771052042, val_loss: 0.8639560341835022, val_acc: 0.84375
+epoch: 613: train_loss: 1.0088514990449347, train_acc: 0.4508928656578064, val_loss: 0.8364631235599518, val_acc: 0.9375
+epoch: 614: train_loss: 1.0086867104700918, train_acc: 0.5267857114473978, val_loss: 0.8648151159286499, val_acc: 0.84375
+epoch: 615: train_loss: 1.0084477156981253, train_acc: 0.5535714228947958, val_loss: 0.8416847288608551, val_acc: 0.875
+epoch: 616: train_loss: 1.0081664376616934, train_acc: 0.601190467675527, val_loss: 0.8657629191875458, val_acc: 0.84375
+epoch: 617: train_loss: 1.0080103010678632, train_acc: 0.4583333333333333, val_loss: 0.8519328832626343, val_acc: 0.890625
+epoch: 618: train_loss: 1.0078712188882992, train_acc: 0.46875, val_loss: 0.8591999411582947, val_acc: 0.84375
+epoch: 619: train_loss: 1.0077049115011774, train_acc: 0.4791666666666667, val_loss: 0.8505325317382812, val_acc: 0.890625
+epoch: 620: train_loss: 1.007489104777719, train_acc: 0.5104166666666666, val_loss: 0.850499838590622, val_acc: 0.90625
+epoch: 621: train_loss: 1.0072712520694431, train_acc: 0.5372023781140646, val_loss: 0.8604156672954559, val_acc: 0.90625
+epoch: 622: train_loss: 1.007053597302537, train_acc: 0.5193452338377634, val_loss: 0.839812159538269, val_acc: 0.953125
+epoch: 623: train_loss: 1.0068322083570513, train_acc: 0.5669642885526022, val_loss: 0.8288687467575073, val_acc: 0.953125
+epoch: 624: train_loss: 1.0066852530797328, train_acc: 0.4747023781140645, val_loss: 0.8165463507175446, val_acc: 0.953125
+epoch: 625: train_loss: 1.0065495167740877, train_acc: 0.4776785671710968, val_loss: 0.8385150134563446, val_acc: 0.9375
+epoch: 626: train_loss: 1.0063034924403718, train_acc: 0.5565476218859354, val_loss: 0.8430343866348267, val_acc: 0.875
+epoch: 627: train_loss: 1.0061521512750866, train_acc: 0.4538690447807312, val_loss: 0.8956028819084167, val_acc: 0.828125
+epoch: 628: train_loss: 1.005992971435703, train_acc: 0.5282738109429678, val_loss: 0.8119910359382629, val_acc: 0.96875
+epoch: 629: train_loss: 1.005802350984049, train_acc: 0.5059523781140646, val_loss: 0.877114862203598, val_acc: 0.890625
+epoch: 630: train_loss: 1.0056615544574579, train_acc: 0.4836309552192688, val_loss: 0.8215242326259613, val_acc: 0.953125
+epoch: 631: train_loss: 1.0055743557428511, train_acc: 0.4702380895614624, val_loss: 0.8054724931716919, val_acc: 0.953125
+epoch: 632: train_loss: 1.0054444766408714, train_acc: 0.4732142885526021, val_loss: 0.8421174883842468, val_acc: 0.90625
+epoch: 633: train_loss: 1.0052965447917726, train_acc: 0.4598214228947957, val_loss: 0.850067138671875, val_acc: 0.796875
+epoch: 634: train_loss: 1.0050787419471843, train_acc: 0.5223214228947958, val_loss: 0.8416376411914825, val_acc: 0.875
+epoch: 635: train_loss: 1.0048557405264376, train_acc: 0.5357142885526022, val_loss: 0.8622028231620789, val_acc: 0.984375
+epoch: 636: train_loss: 1.0046268096773618, train_acc: 0.5476190447807312, val_loss: 0.8449461758136749, val_acc: 0.90625
+epoch: 637: train_loss: 1.004469243180914, train_acc: 0.5059523781140646, val_loss: 0.8543818593025208, val_acc: 0.84375
+epoch: 638: train_loss: 1.0042224945223577, train_acc: 0.569940467675527, val_loss: 0.8704456686973572, val_acc: 0.921875
+epoch: 639: train_loss: 1.0040638296554487, train_acc: 0.4925595323244731, val_loss: 0.8523748517036438, val_acc: 0.875
+epoch: 640: train_loss: 1.0037976184116946, train_acc: 0.5535714228947958, val_loss: 0.8201546669006348, val_acc: 0.921875
+epoch: 641: train_loss: 1.0037038611598228, train_acc: 0.4300595223903656, val_loss: 0.8585110604763031, val_acc: 0.84375
+epoch: 642: train_loss: 1.003485942702642, train_acc: 0.5416666666666666, val_loss: 0.8312427997589111, val_acc: 0.9375
+epoch: 643: train_loss: 1.0032975846751135, train_acc: 0.4761904776096344, val_loss: 0.817094087600708, val_acc: 0.921875
+epoch: 644: train_loss: 1.0030125662645937, train_acc: 0.574404756228129, val_loss: 0.8426932692527771, val_acc: 0.9375
+epoch: 645: train_loss: 1.0029055673025464, train_acc: 0.4657738109429677, val_loss: 0.8438622653484344, val_acc: 0.890625
+epoch: 646: train_loss: 1.0026792342180078, train_acc: 0.574404756228129, val_loss: 0.8054659962654114, val_acc: 0.921875
+epoch: 647: train_loss: 1.0024838506439586, train_acc: 0.4940476218859355, val_loss: 0.8233035802841187, val_acc: 0.890625
+epoch: 648: train_loss: 1.0023127894678299, train_acc: 0.5133928656578064, val_loss: 0.8549326658248901, val_acc: 0.921875
+epoch: 649: train_loss: 1.0021314795506306, train_acc: 0.5282738109429678, val_loss: 0.8065377771854401, val_acc: 0.953125
+epoch: 650: train_loss: 1.0018791839274392, train_acc: 0.5654761989911398, val_loss: 0.8223240971565247, val_acc: 0.9375
+epoch: 651: train_loss: 1.001626070748809, train_acc: 0.5595238010088602, val_loss: 0.8587795794010162, val_acc: 0.828125
+epoch: 652: train_loss: 1.0014031399811574, train_acc: 0.5401785771052042, val_loss: 0.8206302225589752, val_acc: 0.9375
+epoch: 653: train_loss: 1.0012300050039904, train_acc: 0.5, val_loss: 0.8080898523330688, val_acc: 0.921875
+epoch: 654: train_loss: 1.00110740958886, train_acc: 0.4791666666666667, val_loss: 0.789213627576828, val_acc: 0.953125
+epoch: 655: train_loss: 1.0010028502684298, train_acc: 0.4360119005044301, val_loss: 0.8558424115180969, val_acc: 0.796875
+epoch: 656: train_loss: 1.000793812632984, train_acc: 0.5372023781140646, val_loss: 0.7977973222732544, val_acc: 0.90625
+epoch: 657: train_loss: 1.000601118217244, train_acc: 0.4821428656578064, val_loss: 0.8175452649593353, val_acc: 0.9375
+epoch: 658: train_loss: 1.0003695381851465, train_acc: 0.5610119005044302, val_loss: 0.8438396453857422, val_acc: 0.84375
+epoch: 659: train_loss: 1.0002434192582814, train_acc: 0.4657738109429677, val_loss: 0.811502993106842, val_acc: 0.9375
+epoch: 660: train_loss: 1.0000814671355307, train_acc: 0.4776785671710968, val_loss: 0.861837238073349, val_acc: 0.796875
+epoch: 661: train_loss: 0.9998950362205503, train_acc: 0.5357142885526022, val_loss: 0.8248655200004578, val_acc: 0.921875
+epoch: 662: train_loss: 0.9997742273748788, train_acc: 0.4598214228947957, val_loss: 0.8058956861495972, val_acc: 0.9375
+epoch: 663: train_loss: 0.999569346327858, train_acc: 0.5327380895614624, val_loss: 0.8236949741840363, val_acc: 0.859375
+epoch: 664: train_loss: 0.9993792619621542, train_acc: 0.5252976218859354, val_loss: 0.8531469404697418, val_acc: 0.828125
+epoch: 665: train_loss: 0.9991657256602762, train_acc: 0.5758928656578064, val_loss: 0.8455229103565216, val_acc: 0.828125
+epoch: 666: train_loss: 0.9988860823046498, train_acc: 0.5729166666666666, val_loss: 0.8063696920871735, val_acc: 0.875
+epoch: 667: train_loss: 0.998791284993023, train_acc: 0.4538690447807312, val_loss: 0.83004429936409, val_acc: 0.859375
+epoch: 668: train_loss: 0.998582885671624, train_acc: 0.5089285671710968, val_loss: 0.8368098139762878, val_acc: 0.921875
+epoch: 669: train_loss: 0.9984564143330302, train_acc: 0.4657738109429677, val_loss: 0.8375960886478424, val_acc: 0.890625
+epoch: 670: train_loss: 0.9982149913958868, train_acc: 0.5684523781140646, val_loss: 0.8008915781974792, val_acc: 0.890625
+epoch: 671: train_loss: 0.9980848612529889, train_acc: 0.4479166666666667, val_loss: 0.8046009242534637, val_acc: 0.875
+epoch: 672: train_loss: 0.9978308992966853, train_acc: 0.5684523781140646, val_loss: 0.8126159310340881, val_acc: 0.890625
+epoch: 673: train_loss: 0.9975747949527584, train_acc: 0.5342261989911398, val_loss: 0.8612315058708191, val_acc: 0.8125
+epoch: 674: train_loss: 0.9973647960027058, train_acc: 0.5520833333333334, val_loss: 0.8254818022251129, val_acc: 0.921875
+epoch: 675: train_loss: 0.9972640550171834, train_acc: 0.4151785671710968, val_loss: 0.8047238290309906, val_acc: 0.953125
+epoch: 676: train_loss: 0.9971747448267105, train_acc: 0.4032738109429677, val_loss: 0.8230119943618774, val_acc: 0.859375
+epoch: 677: train_loss: 0.9969527194516378, train_acc: 0.5773809552192688, val_loss: 0.787878006696701, val_acc: 0.9375
+epoch: 678: train_loss: 0.9967860853080953, train_acc: 0.4955357114473979, val_loss: 0.8368786573410034, val_acc: 0.84375
+epoch: 679: train_loss: 0.9966268581794755, train_acc: 0.4895833333333333, val_loss: 0.8324199318885803, val_acc: 0.9375
+epoch: 680: train_loss: 0.9964433592788388, train_acc: 0.5208333333333334, val_loss: 0.8057214021682739, val_acc: 0.96875
+epoch: 681: train_loss: 0.9961687419654568, train_acc: 0.6235119104385376, val_loss: 0.8091980516910553, val_acc: 0.953125
+epoch: 682: train_loss: 0.9960401260951716, train_acc: 0.4553571442763011, val_loss: 0.8262128233909607, val_acc: 0.90625
+epoch: 683: train_loss: 0.9959375891130103, train_acc: 0.46875, val_loss: 0.8309898376464844, val_acc: 0.953125
+epoch: 684: train_loss: 0.9957029612395013, train_acc: 0.586309532324473, val_loss: 0.8248629570007324, val_acc: 0.890625
+epoch: 685: train_loss: 0.9955421438543858, train_acc: 0.4657738109429677, val_loss: 0.7974153161048889, val_acc: 0.96875
+epoch: 686: train_loss: 0.9954031256146362, train_acc: 0.4761904776096344, val_loss: 0.8218803703784943, val_acc: 0.875
+epoch: 687: train_loss: 0.9952056920516859, train_acc: 0.5342261989911398, val_loss: 0.8296039700508118, val_acc: 0.890625
+epoch: 688: train_loss: 0.9950908522243709, train_acc: 0.4523809552192688, val_loss: 0.8324999213218689, val_acc: 0.90625
+epoch: 689: train_loss: 0.9949705091939453, train_acc: 0.4330357114473979, val_loss: 0.8171940445899963, val_acc: 0.875
+epoch: 690: train_loss: 0.9947666174768536, train_acc: 0.5461309552192688, val_loss: 0.8207905292510986, val_acc: 0.84375
+epoch: 691: train_loss: 0.9945981043726491, train_acc: 0.5014880895614624, val_loss: 0.7874733805656433, val_acc: 0.953125
+epoch: 692: train_loss: 0.9945813454418813, train_acc: 0.3794642885526021, val_loss: 0.8104131519794464, val_acc: 0.9375
+epoch: 693: train_loss: 0.9944761180167695, train_acc: 0.4866071442763011, val_loss: 0.8719999194145203, val_acc: 0.796875
+epoch: 694: train_loss: 0.994307127845087, train_acc: 0.5014880895614624, val_loss: 0.7831765711307526, val_acc: 0.890625
+epoch: 695: train_loss: 0.9940566189044735, train_acc: 0.6011904776096344, val_loss: 0.80457803606987, val_acc: 0.9375
+epoch: 696: train_loss: 0.9939207432658861, train_acc: 0.4925595323244731, val_loss: 0.8224335014820099, val_acc: 0.921875
+epoch: 697: train_loss: 0.9937839654079479, train_acc: 0.4508928656578064, val_loss: 0.8319282233715057, val_acc: 0.875
+epoch: 698: train_loss: 0.9935033107065391, train_acc: 0.6086309552192688, val_loss: 0.8238528072834015, val_acc: 0.828125
+epoch: 699: train_loss: 0.9933203978765577, train_acc: 0.5059523781140646, val_loss: 0.8112259805202484, val_acc: 0.96875
+epoch: 700: train_loss: 0.9931383390569481, train_acc: 0.5029761989911398, val_loss: 0.8413518071174622, val_acc: 0.890625
+epoch: 701: train_loss: 0.9929587053097889, train_acc: 0.4955357114473979, val_loss: 0.8058087229728699, val_acc: 0.9375
+epoch: 702: train_loss: 0.9928306321387834, train_acc: 0.4389880895614624, val_loss: 0.8080871105194092, val_acc: 0.90625
+epoch: 703: train_loss: 0.9925824687392872, train_acc: 0.574404756228129, val_loss: 0.7840105295181274, val_acc: 0.953125
+epoch: 704: train_loss: 0.9924525464116539, train_acc: 0.46875, val_loss: 0.8450287878513336, val_acc: 0.78125
+epoch: 705: train_loss: 0.9923185862607837, train_acc: 0.4791666666666667, val_loss: 0.8046199977397919, val_acc: 0.90625
+epoch: 706: train_loss: 0.9921557945443007, train_acc: 0.5163690447807312, val_loss: 0.8247743546962738, val_acc: 0.828125
+epoch: 707: train_loss: 0.9918661183219843, train_acc: 0.6026785771052042, val_loss: 0.7891836762428284, val_acc: 0.953125
+epoch: 708: train_loss: 0.9916823707279263, train_acc: 0.5252976218859354, val_loss: 0.7789466083049774, val_acc: 0.953125
+epoch: 709: train_loss: 0.9915254693635751, train_acc: 0.46875, val_loss: 0.8218635022640228, val_acc: 0.875
+epoch: 710: train_loss: 0.9913269657514152, train_acc: 0.5491071343421936, val_loss: 0.8437221944332123, val_acc: 0.859375
+epoch: 711: train_loss: 0.9911554685413612, train_acc: 0.517857144276301, val_loss: 0.7793903350830078, val_acc: 0.9375
+epoch: 712: train_loss: 0.9910575351797568, train_acc: 0.4479166666666667, val_loss: 0.8111488819122314, val_acc: 0.90625
+epoch: 713: train_loss: 0.9909560172831643, train_acc: 0.4375, val_loss: 0.810368537902832, val_acc: 0.890625
+epoch: 714: train_loss: 0.9908159333509163, train_acc: 0.4866071442763011, val_loss: 0.8334910571575165, val_acc: 0.953125
+epoch: 715: train_loss: 0.9906347855731316, train_acc: 0.5163690447807312, val_loss: 0.8026789426803589, val_acc: 0.9375
+epoch: 716: train_loss: 0.9903998976250349, train_acc: 0.5803571343421936, val_loss: 0.8188070058822632, val_acc: 0.953125
+epoch: 717: train_loss: 0.9902294138679927, train_acc: 0.4970238010088603, val_loss: 0.797198086977005, val_acc: 0.9375
+epoch: 718: train_loss: 0.9900510957465436, train_acc: 0.5595238109429678, val_loss: 0.8020186424255371, val_acc: 0.890625
+epoch: 719: train_loss: 0.9898538057726839, train_acc: 0.519345243771871, val_loss: 0.8248456418514252, val_acc: 0.890625
+epoch: 720: train_loss: 0.9896668745476063, train_acc: 0.5252976218859354, val_loss: 0.8324651122093201, val_acc: 0.890625
+epoch: 721: train_loss: 0.9895699426793212, train_acc: 0.4375, val_loss: 0.8108026087284088, val_acc: 0.90625
+epoch: 722: train_loss: 0.9894283200915145, train_acc: 0.4866071442763011, val_loss: 0.8257839977741241, val_acc: 0.90625
+epoch: 723: train_loss: 0.9892600979484463, train_acc: 0.511904756228129, val_loss: 0.7836312651634216, val_acc: 0.90625
+epoch: 724: train_loss: 0.9890036616654229, train_acc: 0.5714285771052042, val_loss: 0.8118831813335419, val_acc: 0.875
+epoch: 725: train_loss: 0.9887972478750539, train_acc: 0.53125, val_loss: 0.808095782995224, val_acc: 0.9375
+epoch: 726: train_loss: 0.988693282042332, train_acc: 0.4791666666666667, val_loss: 0.8285514712333679, val_acc: 0.890625
+epoch: 727: train_loss: 0.9885117568812525, train_acc: 0.5520833333333334, val_loss: 0.7953658699989319, val_acc: 0.890625
+epoch: 728: train_loss: 0.9884118054302301, train_acc: 0.4553571442763011, val_loss: 0.8052096366882324, val_acc: 0.953125
+epoch: 729: train_loss: 0.9882319048659439, train_acc: 0.511904756228129, val_loss: 0.808334618806839, val_acc: 0.90625
+epoch: 730: train_loss: 0.9880448952690953, train_acc: 0.5014880895614624, val_loss: 0.8070821464061737, val_acc: 0.90625
+epoch: 731: train_loss: 0.9878167560788883, train_acc: 0.5505952338377634, val_loss: 0.8093350827693939, val_acc: 0.875
+epoch: 732: train_loss: 0.9876837868916004, train_acc: 0.46875, val_loss: 0.8258872330188751, val_acc: 0.9375
+epoch: 733: train_loss: 0.9875112906788607, train_acc: 0.4851190447807312, val_loss: 0.7772685885429382, val_acc: 0.953125
+epoch: 734: train_loss: 0.9873299473267291, train_acc: 0.5595238010088602, val_loss: 0.8309572339057922, val_acc: 0.984375
+epoch: 735: train_loss: 0.987127740503005, train_acc: 0.5505952338377634, val_loss: 0.7712677121162415, val_acc: 0.921875
+epoch: 736: train_loss: 0.9869284218439197, train_acc: 0.53125, val_loss: 0.7797636985778809, val_acc: 0.9375
+epoch: 737: train_loss: 0.9867566236527845, train_acc: 0.5, val_loss: 0.8225467205047607, val_acc: 0.84375
+epoch: 738: train_loss: 0.9866460720913118, train_acc: 0.4479166666666667, val_loss: 0.8227946758270264, val_acc: 0.75
+epoch: 739: train_loss: 0.9865431712822869, train_acc: 0.4747023781140645, val_loss: 0.770311176776886, val_acc: 0.953125
+epoch: 740: train_loss: 0.9864232932668625, train_acc: 0.4866071442763011, val_loss: 0.8099818825721741, val_acc: 0.9375
+epoch: 741: train_loss: 0.986280252214819, train_acc: 0.4880952338377635, val_loss: 0.781165212392807, val_acc: 0.90625
+epoch: 742: train_loss: 0.9860398385117223, train_acc: 0.555059532324473, val_loss: 0.8167034089565277, val_acc: 0.9375
+epoch: 743: train_loss: 0.9858802809884042, train_acc: 0.5297619005044302, val_loss: 0.76093590259552, val_acc: 0.96875
+epoch: 744: train_loss: 0.9856645005928054, train_acc: 0.5773809552192688, val_loss: 0.7637895047664642, val_acc: 0.953125
+epoch: 745: train_loss: 0.9854458837609292, train_acc: 0.5610119005044302, val_loss: 0.7833170294761658, val_acc: 0.96875
+epoch: 746: train_loss: 0.9853470297542758, train_acc: 0.4598214228947957, val_loss: 0.8014816641807556, val_acc: 0.859375
+epoch: 747: train_loss: 0.9852443655916285, train_acc: 0.4702380895614624, val_loss: 0.8155673742294312, val_acc: 0.953125
+epoch: 748: train_loss: 0.9850745964538373, train_acc: 0.5267857114473978, val_loss: 0.794551432132721, val_acc: 0.890625
+epoch: 749: train_loss: 0.9849055768648779, train_acc: 0.5044642885526022, val_loss: 0.819032222032547, val_acc: 0.921875
+epoch: 750: train_loss: 0.9847086340493216, train_acc: 0.5163690447807312, val_loss: 0.7925949990749359, val_acc: 0.953125
+epoch: 751: train_loss: 0.9845578235884503, train_acc: 0.4821428656578064, val_loss: 0.7846831381320953, val_acc: 0.921875
+epoch: 752: train_loss: 0.9844092211928075, train_acc: 0.4895833333333333, val_loss: 0.8062014877796173, val_acc: 0.90625
+epoch: 753: train_loss: 0.9842169893251698, train_acc: 0.5401785671710968, val_loss: 0.7961835265159607, val_acc: 0.890625
+epoch: 754: train_loss: 0.9840699463490615, train_acc: 0.4955357114473979, val_loss: 0.7995599806308746, val_acc: 0.953125
+epoch: 755: train_loss: 0.9838969859128693, train_acc: 0.5133928656578064, val_loss: 0.7654842734336853, val_acc: 0.9375
+epoch: 756: train_loss: 0.9836895209952419, train_acc: 0.53125, val_loss: 0.814109593629837, val_acc: 0.921875
+epoch: 757: train_loss: 0.983484601570832, train_acc: 0.5535714228947958, val_loss: 0.7993791997432709, val_acc: 0.90625
+epoch: 758: train_loss: 0.9834076178456062, train_acc: 0.4375, val_loss: 0.7958347797393799, val_acc: 0.875
+epoch: 759: train_loss: 0.9832491276818406, train_acc: 0.4910714228947957, val_loss: 0.7766224145889282, val_acc: 0.90625
+epoch: 760: train_loss: 0.9832018349340905, train_acc: 0.4241071442763011, val_loss: 0.8137171864509583, val_acc: 0.890625
+epoch: 761: train_loss: 0.9830239936904953, train_acc: 0.5282738109429678, val_loss: 0.8034642934799194, val_acc: 0.9375
+epoch: 762: train_loss: 0.9829103336317558, train_acc: 0.4851190447807312, val_loss: 0.7959420680999756, val_acc: 0.890625
+epoch: 763: train_loss: 0.9826830954503841, train_acc: 0.543154756228129, val_loss: 0.8153915405273438, val_acc: 0.921875
+epoch: 764: train_loss: 0.9824877250168573, train_acc: 0.543154756228129, val_loss: 0.7997915148735046, val_acc: 0.953125
+epoch: 765: train_loss: 0.9823429234864086, train_acc: 0.5089285671710968, val_loss: 0.7971557676792145, val_acc: 0.875
+epoch: 766: train_loss: 0.9822038933537615, train_acc: 0.4985119005044301, val_loss: 0.7940735220909119, val_acc: 0.953125
+epoch: 767: train_loss: 0.9819699144766972, train_acc: 0.5535714228947958, val_loss: 0.7925971448421478, val_acc: 0.90625
+epoch: 768: train_loss: 0.9818121217317167, train_acc: 0.5044642885526022, val_loss: 0.7902606725692749, val_acc: 0.921875
+epoch: 769: train_loss: 0.9816755293509657, train_acc: 0.4538690447807312, val_loss: 0.778712809085846, val_acc: 0.890625
+epoch: 770: train_loss: 0.9815142935764409, train_acc: 0.5208333333333334, val_loss: 0.7764419913291931, val_acc: 0.921875
+epoch: 771: train_loss: 0.9813075806810444, train_acc: 0.5565476218859354, val_loss: 0.7698707282543182, val_acc: 0.921875
+epoch: 772: train_loss: 0.9812066010382212, train_acc: 0.4404761890570323, val_loss: 0.7992648184299469, val_acc: 0.890625
+epoch: 773: train_loss: 0.9810794480754624, train_acc: 0.4821428656578064, val_loss: 0.7936865091323853, val_acc: 0.875
+epoch: 774: train_loss: 0.9809318830633671, train_acc: 0.5208333333333334, val_loss: 0.7931718826293945, val_acc: 0.890625
+epoch: 775: train_loss: 0.9807339696232801, train_acc: 0.5610119005044302, val_loss: 0.813382476568222, val_acc: 0.890625
+epoch: 776: train_loss: 0.980506861583197, train_acc: 0.5729166666666666, val_loss: 0.7902910113334656, val_acc: 0.921875
+epoch: 777: train_loss: 0.9802805893474286, train_acc: 0.5639880895614624, val_loss: 0.7858720123767853, val_acc: 0.890625
+epoch: 778: train_loss: 0.9801539791716838, train_acc: 0.4821428557236989, val_loss: 0.8073070347309113, val_acc: 0.84375
+epoch: 779: train_loss: 0.9800258064117181, train_acc: 0.4672619005044301, val_loss: 0.7613030076026917, val_acc: 0.96875
+epoch: 780: train_loss: 0.979899819747942, train_acc: 0.4464285671710968, val_loss: 0.7993391156196594, val_acc: 0.90625
+epoch: 781: train_loss: 0.9797009006587231, train_acc: 0.5639880895614624, val_loss: 0.7822315692901611, val_acc: 0.96875
+epoch: 782: train_loss: 0.9795385284746584, train_acc: 0.5327380895614624, val_loss: 0.8084151744842529, val_acc: 0.859375
+epoch: 783: train_loss: 0.9793829274471512, train_acc: 0.5193452338377634, val_loss: 0.7804918885231018, val_acc: 0.890625
+epoch: 784: train_loss: 0.9791979076249829, train_acc: 0.5580357114473978, val_loss: 0.8069120645523071, val_acc: 0.84375
+epoch: 785: train_loss: 0.978960181870027, train_acc: 0.5892857114473978, val_loss: 0.7684133648872375, val_acc: 0.953125
+epoch: 786: train_loss: 0.9787590778111293, train_acc: 0.5178571343421936, val_loss: 0.779398113489151, val_acc: 0.890625
+epoch: 787: train_loss: 0.9785889133231079, train_acc: 0.4985119005044301, val_loss: 0.7898330092430115, val_acc: 0.921875
+epoch: 788: train_loss: 0.9784290134327586, train_acc: 0.5267857114473978, val_loss: 0.7533181607723236, val_acc: 0.890625
+epoch: 789: train_loss: 0.9783450860765908, train_acc: 0.3943452338377635, val_loss: 0.7659253478050232, val_acc: 0.9375
+epoch: 790: train_loss: 0.9782266996854266, train_acc: 0.4330357114473979, val_loss: 0.7727823555469513, val_acc: 0.953125
+epoch: 791: train_loss: 0.9780774331002515, train_acc: 0.511904756228129, val_loss: 0.795770525932312, val_acc: 0.859375
+epoch: 792: train_loss: 0.9779072165639515, train_acc: 0.5193452338377634, val_loss: 0.755739837884903, val_acc: 0.953125
+epoch: 793: train_loss: 0.9777722978271617, train_acc: 0.4851190447807312, val_loss: 0.7677388489246368, val_acc: 0.96875
+epoch: 794: train_loss: 0.977678872479332, train_acc: 0.4776785671710968, val_loss: 0.7653196454048157, val_acc: 0.90625
+epoch: 795: train_loss: 0.9774180161743301, train_acc: 0.6294642885526022, val_loss: 0.8086406588554382, val_acc: 0.859375
+epoch: 796: train_loss: 0.977256206975527, train_acc: 0.5014880895614624, val_loss: 0.7740746140480042, val_acc: 0.953125
+epoch: 797: train_loss: 0.9771112921144324, train_acc: 0.4866071442763011, val_loss: 0.7987414002418518, val_acc: 0.90625
+epoch: 798: train_loss: 0.9769882206425442, train_acc: 0.46875, val_loss: 0.7692535817623138, val_acc: 0.953125
+epoch: 799: train_loss: 0.9768709655851118, train_acc: 0.4761904776096344, val_loss: 0.7798028886318207, val_acc: 0.875
+epoch: 800: train_loss: 0.976788044248676, train_acc: 0.4315476218859355, val_loss: 0.7887720167636871, val_acc: 0.90625
+epoch: 801: train_loss: 0.9766647745595798, train_acc: 0.4479166666666667, val_loss: 0.7716205418109894, val_acc: 0.953125
+epoch: 802: train_loss: 0.9765384173729738, train_acc: 0.4702380895614624, val_loss: 0.775593101978302, val_acc: 0.984375
+epoch: 803: train_loss: 0.9763884093630957, train_acc: 0.5297619005044302, val_loss: 0.8078901171684265, val_acc: 0.8125
+epoch: 804: train_loss: 0.9762456371423858, train_acc: 0.4672619005044301, val_loss: 0.7907410562038422, val_acc: 0.890625
+epoch: 805: train_loss: 0.9761155786052818, train_acc: 0.4613095323244731, val_loss: 0.752691239118576, val_acc: 0.90625
+epoch: 806: train_loss: 0.9759094129166087, train_acc: 0.5625, val_loss: 0.7876531183719635, val_acc: 0.953125
+epoch: 807: train_loss: 0.9757244151220846, train_acc: 0.5193452338377634, val_loss: 0.7575966417789459, val_acc: 0.96875
+epoch: 808: train_loss: 0.975583614981807, train_acc: 0.5014880895614624, val_loss: 0.7679473757743835, val_acc: 0.984375
+epoch: 809: train_loss: 0.9754646018944639, train_acc: 0.4568452338377635, val_loss: 0.7838176488876343, val_acc: 0.875
+epoch: 810: train_loss: 0.9753726707580781, train_acc: 0.4717261890570323, val_loss: 0.8020548522472382, val_acc: 0.890625
+epoch: 811: train_loss: 0.9751677210205675, train_acc: 0.5580357114473978, val_loss: 0.7739436328411102, val_acc: 0.890625
+epoch: 812: train_loss: 0.9750727413862921, train_acc: 0.4255952338377635, val_loss: 0.7931092381477356, val_acc: 0.890625
+epoch: 813: train_loss: 0.9749110445782934, train_acc: 0.4836309552192688, val_loss: 0.7648554444313049, val_acc: 0.96875
+epoch: 814: train_loss: 0.9747843660459917, train_acc: 0.4925595323244731, val_loss: 0.7864028811454773, val_acc: 0.984375
+epoch: 815: train_loss: 0.9746270185105151, train_acc: 0.5148809552192688, val_loss: 0.7699556946754456, val_acc: 0.890625
+epoch: 816: train_loss: 0.9745001222882053, train_acc: 0.4776785671710968, val_loss: 0.815044492483139, val_acc: 0.84375
+epoch: 817: train_loss: 0.9742877069001471, train_acc: 0.543154756228129, val_loss: 0.75348761677742, val_acc: 0.9375
+epoch: 818: train_loss: 0.9740826814796646, train_acc: 0.5535714228947958, val_loss: 0.7886787056922913, val_acc: 0.90625
+epoch: 819: train_loss: 0.9739709287639545, train_acc: 0.4747023781140645, val_loss: 0.8023369014263153, val_acc: 0.90625
+epoch: 820: train_loss: 0.9738648624329164, train_acc: 0.4553571442763011, val_loss: 0.8154159486293793, val_acc: 0.921875
+epoch: 821: train_loss: 0.9737252105036491, train_acc: 0.5089285671710968, val_loss: 0.7734574675559998, val_acc: 0.90625
+epoch: 822: train_loss: 0.9735144793190604, train_acc: 0.5535714228947958, val_loss: 0.7682546377182007, val_acc: 0.953125
+epoch: 823: train_loss: 0.9733018468112998, train_acc: 0.5877976218859354, val_loss: 0.817450076341629, val_acc: 0.859375
+epoch: 824: train_loss: 0.973125155092489, train_acc: 0.5252976218859354, val_loss: 0.790245771408081, val_acc: 0.890625
+epoch: 825: train_loss: 0.9729766047125954, train_acc: 0.4880952338377635, val_loss: 0.754043698310852, val_acc: 0.90625
+epoch: 826: train_loss: 0.9729066719839708, train_acc: 0.4657738109429677, val_loss: 0.7697974741458893, val_acc: 0.953125
+epoch: 827: train_loss: 0.9727845958369549, train_acc: 0.4598214228947957, val_loss: 0.7912973463535309, val_acc: 0.875
+epoch: 828: train_loss: 0.9727017231672024, train_acc: 0.4211309552192688, val_loss: 0.7951373159885406, val_acc: 0.890625
+epoch: 829: train_loss: 0.972485207697473, train_acc: 0.5654761989911398, val_loss: 0.8012955188751221, val_acc: 0.84375
+epoch: 830: train_loss: 0.9723380726836448, train_acc: 0.4985119005044301, val_loss: 0.7875367403030396, val_acc: 0.875
+epoch: 831: train_loss: 0.9721841634227288, train_acc: 0.543154756228129, val_loss: 0.7898443639278412, val_acc: 0.859375
+epoch: 832: train_loss: 0.9720379494580798, train_acc: 0.511904756228129, val_loss: 0.7855287194252014, val_acc: 0.90625
+epoch: 833: train_loss: 0.971870551554323, train_acc: 0.5208333333333334, val_loss: 0.7977115213871002, val_acc: 0.890625
+epoch: 834: train_loss: 0.9718160575973288, train_acc: 0.4226190447807312, val_loss: 0.8079002499580383, val_acc: 0.84375
+epoch: 835: train_loss: 0.9717495542916755, train_acc: 0.4107142885526021, val_loss: 0.7811537384986877, val_acc: 0.953125
+epoch: 836: train_loss: 0.9715473944805657, train_acc: 0.5386904776096344, val_loss: 0.7642103135585785, val_acc: 0.9375
+epoch: 837: train_loss: 0.9714165106356467, train_acc: 0.4657738109429677, val_loss: 0.7690922617912292, val_acc: 0.953125
+epoch: 838: train_loss: 0.9712358668156442, train_acc: 0.538690467675527, val_loss: 0.7579049468040466, val_acc: 0.96875
+epoch: 839: train_loss: 0.9710753672889293, train_acc: 0.5133928656578064, val_loss: 0.8414056301116943, val_acc: 0.796875
+epoch: 840: train_loss: 0.9709457390090082, train_acc: 0.5074404776096344, val_loss: 0.7842292487621307, val_acc: 0.953125
+epoch: 841: train_loss: 0.9708037220667199, train_acc: 0.5014880895614624, val_loss: 0.795384556055069, val_acc: 0.921875
+epoch: 842: train_loss: 0.9705934621166825, train_acc: 0.5833333333333334, val_loss: 0.7264610528945923, val_acc: 0.9375
+epoch: 843: train_loss: 0.9703678954834049, train_acc: 0.601190467675527, val_loss: 0.7544974982738495, val_acc: 0.953125
+epoch: 844: train_loss: 0.9701928473083217, train_acc: 0.5446428656578064, val_loss: 0.8057196736335754, val_acc: 0.8125
+epoch: 845: train_loss: 0.9699867024865079, train_acc: 0.5461309552192688, val_loss: 0.7283397316932678, val_acc: 0.921875
+epoch: 846: train_loss: 0.9697969580015665, train_acc: 0.5446428656578064, val_loss: 0.7533654272556305, val_acc: 0.9375
+epoch: 847: train_loss: 0.9697077082669202, train_acc: 0.4255952388048172, val_loss: 0.8000454008579254, val_acc: 0.890625
+epoch: 848: train_loss: 0.9695348086476927, train_acc: 0.5714285771052042, val_loss: 0.7827926874160767, val_acc: 0.953125
+epoch: 849: train_loss: 0.9694237596147194, train_acc: 0.4523809552192688, val_loss: 0.7424763441085815, val_acc: 0.9375
+epoch: 850: train_loss: 0.9692613489946282, train_acc: 0.5505952338377634, val_loss: 0.7873885631561279, val_acc: 0.890625
+epoch: 851: train_loss: 0.9690538739001426, train_acc: 0.5684523781140646, val_loss: 0.760021299123764, val_acc: 0.953125
+epoch: 852: train_loss: 0.9688378485118372, train_acc: 0.5639880895614624, val_loss: 0.7518639266490936, val_acc: 0.9375
+epoch: 853: train_loss: 0.9686051466379375, train_acc: 0.5892857114473978, val_loss: 0.7479090988636017, val_acc: 0.984375
+epoch: 854: train_loss: 0.9684394655869014, train_acc: 0.550595243771871, val_loss: 0.7865535020828247, val_acc: 0.921875
+epoch: 855: train_loss: 0.9682340047951792, train_acc: 0.569940467675527, val_loss: 0.7716819047927856, val_acc: 0.953125
+epoch: 856: train_loss: 0.9680928931955874, train_acc: 0.5178571343421936, val_loss: 0.8052678108215332, val_acc: 0.90625
+epoch: 857: train_loss: 0.9679053723580532, train_acc: 0.5565476218859354, val_loss: 0.7827309966087341, val_acc: 0.859375
+epoch: 858: train_loss: 0.9676913898214141, train_acc: 0.6041666666666666, val_loss: 0.7879907190799713, val_acc: 0.890625
+epoch: 859: train_loss: 0.967491026419077, train_acc: 0.5669642885526022, val_loss: 0.7934250235557556, val_acc: 0.90625
+epoch: 860: train_loss: 0.9673774085024547, train_acc: 0.4419642885526021, val_loss: 0.7682943046092987, val_acc: 0.96875
+epoch: 861: train_loss: 0.9671698175053762, train_acc: 0.5773809552192688, val_loss: 0.7755121290683746, val_acc: 0.890625
+epoch: 862: train_loss: 0.9670601805327428, train_acc: 0.4434523781140645, val_loss: 0.7475380003452301, val_acc: 0.953125
+epoch: 863: train_loss: 0.9668811586352035, train_acc: 0.5223214228947958, val_loss: 0.7526724934577942, val_acc: 0.953125
+epoch: 864: train_loss: 0.9667946399062118, train_acc: 0.4627976218859355, val_loss: 0.7376263737678528, val_acc: 0.953125
+epoch: 865: train_loss: 0.966709341151242, train_acc: 0.4449404776096344, val_loss: 0.7827976047992706, val_acc: 0.859375
+epoch: 866: train_loss: 0.9665126259030852, train_acc: 0.5669642885526022, val_loss: 0.7576965093612671, val_acc: 0.96875
+epoch: 867: train_loss: 0.9664385843157944, train_acc: 0.4092261890570323, val_loss: 0.7584516406059265, val_acc: 0.859375
+epoch: 868: train_loss: 0.9662938082771455, train_acc: 0.4880952338377635, val_loss: 0.7815060019493103, val_acc: 0.96875
+epoch: 869: train_loss: 0.9661505259544906, train_acc: 0.5029761989911398, val_loss: 0.8558699488639832, val_acc: 0.78125
+epoch: 870: train_loss: 0.9660183420091849, train_acc: 0.5059523781140646, val_loss: 0.744962215423584, val_acc: 0.90625
+epoch: 871: train_loss: 0.9659401420332963, train_acc: 0.4300595323244731, val_loss: 0.7728477716445923, val_acc: 0.984375
+epoch: 872: train_loss: 0.9658171976281734, train_acc: 0.4776785671710968, val_loss: 0.7529244124889374, val_acc: 0.953125
+epoch: 873: train_loss: 0.965668086329095, train_acc: 0.511904756228129, val_loss: 0.7990618348121643, val_acc: 0.90625
+epoch: 874: train_loss: 0.9654580200967328, train_acc: 0.5952380895614624, val_loss: 0.76658895611763, val_acc: 0.90625
+epoch: 875: train_loss: 0.9653808910008427, train_acc: 0.4464285671710968, val_loss: 0.758775532245636, val_acc: 0.96875
+epoch: 876: train_loss: 0.9652858348411094, train_acc: 0.4851190447807312, val_loss: 0.7698403298854828, val_acc: 0.90625
+epoch: 877: train_loss: 0.9651614086322008, train_acc: 0.5327380895614624, val_loss: 0.7854833006858826, val_acc: 0.828125
+epoch: 878: train_loss: 0.9650477304981196, train_acc: 0.4598214228947957, val_loss: 0.7753341197967529, val_acc: 0.984375
+epoch: 879: train_loss: 0.9647997870138189, train_acc: 0.6294642885526022, val_loss: 0.784589946269989, val_acc: 0.90625
+epoch: 880: train_loss: 0.9646325270605494, train_acc: 0.5282738109429678, val_loss: 0.7361525297164917, val_acc: 0.96875
+epoch: 881: train_loss: 0.9643996700993643, train_acc: 0.5654761989911398, val_loss: 0.7573912739753723, val_acc: 0.984375
+epoch: 882: train_loss: 0.9642277823704143, train_acc: 0.5297619005044302, val_loss: 0.7675992548465729, val_acc: 0.96875
+epoch: 883: train_loss: 0.9640449803788909, train_acc: 0.5074404776096344, val_loss: 0.7436595857143402, val_acc: 0.953125
+epoch: 884: train_loss: 0.9639652813446267, train_acc: 0.4672619005044301, val_loss: 0.7599731683731079, val_acc: 0.890625
+epoch: 885: train_loss: 0.9638100005433997, train_acc: 0.5059523781140646, val_loss: 0.7947687804698944, val_acc: 0.984375
+epoch: 886: train_loss: 0.9637307643397586, train_acc: 0.4449404776096344, val_loss: 0.7647595703601837, val_acc: 0.90625
+epoch: 887: train_loss: 0.9635867869576525, train_acc: 0.4970238109429677, val_loss: 0.7671308219432831, val_acc: 0.921875
+epoch: 888: train_loss: 0.9633815006946945, train_acc: 0.5758928656578064, val_loss: 0.7680473625659943, val_acc: 0.90625
+epoch: 889: train_loss: 0.9631616856051732, train_acc: 0.5892857114473978, val_loss: 0.7583239674568176, val_acc: 0.953125
+epoch: 890: train_loss: 0.963034051346769, train_acc: 0.4970238109429677, val_loss: 0.7727887630462646, val_acc: 0.90625
+epoch: 891: train_loss: 0.9628816960192929, train_acc: 0.5297619005044302, val_loss: 0.7587646245956421, val_acc: 0.828125
+epoch: 892: train_loss: 0.9627565630739764, train_acc: 0.4940476218859355, val_loss: 0.7624357342720032, val_acc: 0.890625
+epoch: 893: train_loss: 0.9625123647902092, train_acc: 0.6145833333333334, val_loss: 0.7389146089553833, val_acc: 0.96875
+epoch: 894: train_loss: 0.9623798938880853, train_acc: 0.5014880895614624, val_loss: 0.8108132779598236, val_acc: 0.90625
+epoch: 895: train_loss: 0.9622717538538067, train_acc: 0.4747023781140645, val_loss: 0.7488002479076385, val_acc: 0.921875
+epoch: 896: train_loss: 0.9621240583683458, train_acc: 0.543154756228129, val_loss: 0.7260010540485382, val_acc: 0.96875
+epoch: 897: train_loss: 0.9620161865849615, train_acc: 0.4895833333333333, val_loss: 0.7659681737422943, val_acc: 0.8125
+epoch: 898: train_loss: 0.9618255418452845, train_acc: 0.5669642885526022, val_loss: 0.7621772289276123, val_acc: 0.890625
+epoch: 899: train_loss: 0.9616022143761306, train_acc: 0.5848214228947958, val_loss: 0.7467692196369171, val_acc: 0.96875
+epoch: 900: train_loss: 0.9614650250760165, train_acc: 0.5089285671710968, val_loss: 0.7747522592544556, val_acc: 0.96875
+epoch: 901: train_loss: 0.9613543835861621, train_acc: 0.4553571442763011, val_loss: 0.7956162393093109, val_acc: 0.90625
+epoch: 902: train_loss: 0.9612453066145364, train_acc: 0.4747023781140645, val_loss: 0.7747192680835724, val_acc: 0.890625
+epoch: 903: train_loss: 0.9611076286452699, train_acc: 0.4851190447807312, val_loss: 0.7827067077159882, val_acc: 0.984375
+epoch: 904: train_loss: 0.9609875484066105, train_acc: 0.5, val_loss: 0.7575582265853882, val_acc: 0.921875
+epoch: 905: train_loss: 0.9608129801734384, train_acc: 0.5074404776096344, val_loss: 0.7470403015613556, val_acc: 0.953125
+epoch: 906: train_loss: 0.9606381160115012, train_acc: 0.5372023781140646, val_loss: 0.7696111798286438, val_acc: 0.9375
+epoch: 907: train_loss: 0.9604187658748603, train_acc: 0.5982142885526022, val_loss: 0.729674369096756, val_acc: 0.953125
+epoch: 908: train_loss: 0.9602509682153133, train_acc: 0.5208333333333334, val_loss: 0.7450588941574097, val_acc: 0.953125
+epoch: 909: train_loss: 0.9600735666769319, train_acc: 0.5654761989911398, val_loss: 0.7529399394989014, val_acc: 0.9375
+epoch: 910: train_loss: 0.9600135027555323, train_acc: 0.4330357114473979, val_loss: 0.7674764692783356, val_acc: 0.9375
+epoch: 911: train_loss: 0.9598179536691874, train_acc: 0.5892857114473978, val_loss: 0.7570177316665649, val_acc: 0.9375
+epoch: 912: train_loss: 0.9597392121602594, train_acc: 0.4717261989911397, val_loss: 0.7691960334777832, val_acc: 0.953125
+epoch: 913: train_loss: 0.9595778505789974, train_acc: 0.511904756228129, val_loss: 0.7734677791595459, val_acc: 0.875
+epoch: 914: train_loss: 0.9594404039270015, train_acc: 0.5089285671710968, val_loss: 0.7563613653182983, val_acc: 0.984375
+epoch: 915: train_loss: 0.9592540235064775, train_acc: 0.5654761989911398, val_loss: 0.7531554400920868, val_acc: 0.953125
+epoch: 916: train_loss: 0.9591279381927419, train_acc: 0.4895833333333333, val_loss: 0.7650055289268494, val_acc: 0.90625
+epoch: 917: train_loss: 0.958979858249187, train_acc: 0.5267857114473978, val_loss: 0.7702762186527252, val_acc: 0.921875
+epoch: 918: train_loss: 0.9588713782353371, train_acc: 0.4553571442763011, val_loss: 0.7377224564552307, val_acc: 0.921875
+epoch: 919: train_loss: 0.9587899208500757, train_acc: 0.4107142885526021, val_loss: 0.7293745279312134, val_acc: 0.9375
+epoch: 920: train_loss: 0.9585879317151427, train_acc: 0.586309532324473, val_loss: 0.7292735576629639, val_acc: 0.953125
+epoch: 921: train_loss: 0.9584310142052657, train_acc: 0.53125, val_loss: 0.7221374809741974, val_acc: 0.9375
+epoch: 922: train_loss: 0.9584032625401214, train_acc: 0.3898809552192688, val_loss: 0.7430795133113861, val_acc: 0.9375
+epoch: 923: train_loss: 0.9582348579452142, train_acc: 0.5342261989911398, val_loss: 0.7455582916736603, val_acc: 0.9375
+epoch: 924: train_loss: 0.9580417601911863, train_acc: 0.574404756228129, val_loss: 0.7318030297756195, val_acc: 0.96875
+epoch: 925: train_loss: 0.9579233388148931, train_acc: 0.5163690447807312, val_loss: 0.7661647796630859, val_acc: 0.921875
+epoch: 926: train_loss: 0.9578081219799002, train_acc: 0.4776785671710968, val_loss: 0.7498606443405151, val_acc: 0.9375
+epoch: 927: train_loss: 0.9576700635511292, train_acc: 0.4895833333333333, val_loss: 0.7427763044834137, val_acc: 0.9375
+epoch: 928: train_loss: 0.9575190074904905, train_acc: 0.53125, val_loss: 0.740204393863678, val_acc: 0.984375
+epoch: 929: train_loss: 0.9573593058252838, train_acc: 0.5252976218859354, val_loss: 0.7814008295536041, val_acc: 0.890625
+epoch: 930: train_loss: 0.9571495536958868, train_acc: 0.601190467675527, val_loss: 0.7403324842453003, val_acc: 0.921875
+epoch: 931: train_loss: 0.9569558223898652, train_acc: 0.5535714228947958, val_loss: 0.7504590153694153, val_acc: 0.890625
+epoch: 932: train_loss: 0.9567388486291469, train_acc: 0.6294642885526022, val_loss: 0.7286744713783264, val_acc: 0.9375
+epoch: 933: train_loss: 0.9565691030467935, train_acc: 0.5208333333333334, val_loss: 0.7531730532646179, val_acc: 0.9375
+epoch: 934: train_loss: 0.9564038170425216, train_acc: 0.5714285771052042, val_loss: 0.8024319708347321, val_acc: 0.890625
+epoch: 935: train_loss: 0.9562429448011247, train_acc: 0.5446428656578064, val_loss: 0.7296749949455261, val_acc: 0.921875
+epoch: 936: train_loss: 0.9560861375907773, train_acc: 0.5297619005044302, val_loss: 0.7480151653289795, val_acc: 0.859375
+epoch: 937: train_loss: 0.9560204146598016, train_acc: 0.4345238109429677, val_loss: 0.7674289643764496, val_acc: 0.90625
+epoch: 938: train_loss: 0.9558317301160772, train_acc: 0.5714285671710968, val_loss: 0.7405791282653809, val_acc: 0.875
+epoch: 939: train_loss: 0.9556999663089176, train_acc: 0.4925595323244731, val_loss: 0.7436713576316833, val_acc: 0.921875
+epoch: 940: train_loss: 0.9555460591076362, train_acc: 0.5565476218859354, val_loss: 0.7697895169258118, val_acc: 0.9375
+epoch: 941: train_loss: 0.9553607007289551, train_acc: 0.5267857114473978, val_loss: 0.7585865259170532, val_acc: 0.90625
+epoch: 942: train_loss: 0.9551903321659572, train_acc: 0.5327380895614624, val_loss: 0.7663387656211853, val_acc: 0.90625
+epoch: 943: train_loss: 0.9550437995016906, train_acc: 0.4910714228947957, val_loss: 0.7451242804527283, val_acc: 0.921875
+epoch: 944: train_loss: 0.9549295844434635, train_acc: 0.4672619005044301, val_loss: 0.7573869526386261, val_acc: 0.96875
+epoch: 945: train_loss: 0.9547963886928016, train_acc: 0.5074404776096344, val_loss: 0.7672778964042664, val_acc: 0.859375
+epoch: 946: train_loss: 0.9546975808553143, train_acc: 0.4538690447807312, val_loss: 0.7779443562030792, val_acc: 0.90625
+epoch: 947: train_loss: 0.9545699733554389, train_acc: 0.4910714228947957, val_loss: 0.7970182299613953, val_acc: 0.84375
+epoch: 948: train_loss: 0.9544048977392277, train_acc: 0.5327380895614624, val_loss: 0.7649013996124268, val_acc: 0.953125
+epoch: 949: train_loss: 0.9543094813196278, train_acc: 0.4732142885526021, val_loss: 0.7436320185661316, val_acc: 0.9375
+epoch: 950: train_loss: 0.9541467226600375, train_acc: 0.5773809552192688, val_loss: 0.7749727070331573, val_acc: 0.875
+epoch: 951: train_loss: 0.9539896937019346, train_acc: 0.555059532324473, val_loss: 0.760883092880249, val_acc: 0.96875
+epoch: 952: train_loss: 0.9538577237759653, train_acc: 0.4910714228947957, val_loss: 0.74320188164711, val_acc: 0.921875
+epoch: 953: train_loss: 0.9537493818127797, train_acc: 0.5223214228947958, val_loss: 0.7659009695053101, val_acc: 0.921875
+epoch: 954: train_loss: 0.9536041256436915, train_acc: 0.5074404776096344, val_loss: 0.7139478325843811, val_acc: 0.96875
+epoch: 955: train_loss: 0.9534531004383969, train_acc: 0.511904756228129, val_loss: 0.7602403163909912, val_acc: 0.890625
+epoch: 956: train_loss: 0.9533524862028335, train_acc: 0.4717261989911397, val_loss: 0.7738421857357025, val_acc: 0.875
+epoch: 957: train_loss: 0.9532001973567275, train_acc: 0.5535714228947958, val_loss: 0.7382171452045441, val_acc: 0.953125
+epoch: 958: train_loss: 0.9530196675294628, train_acc: 0.574404756228129, val_loss: 0.803111344575882, val_acc: 0.84375
+epoch: 959: train_loss: 0.9528406515303582, train_acc: 0.5461309552192688, val_loss: 0.7150743007659912, val_acc: 0.9375
+epoch: 960: train_loss: 0.9527635114125974, train_acc: 0.4657738109429677, val_loss: 0.7414165139198303, val_acc: 0.890625
+epoch: 961: train_loss: 0.9526252320923078, train_acc: 0.4910714228947957, val_loss: 0.7394446134567261, val_acc: 0.9375
+epoch: 962: train_loss: 0.9525021997526383, train_acc: 0.4747023781140645, val_loss: 0.7694425284862518, val_acc: 0.953125
+epoch: 963: train_loss: 0.9522667754116886, train_acc: 0.5758928656578064, val_loss: 0.7237803936004639, val_acc: 0.9375
+epoch: 964: train_loss: 0.9521089434829604, train_acc: 0.53125, val_loss: 0.7159488797187805, val_acc: 0.984375
+epoch: 965: train_loss: 0.9519736918397733, train_acc: 0.549107144276301, val_loss: 0.7286482155323029, val_acc: 0.921875
+epoch: 966: train_loss: 0.9518352703200006, train_acc: 0.4910714228947957, val_loss: 0.7726721465587616, val_acc: 0.921875
+epoch: 967: train_loss: 0.9516700998400195, train_acc: 0.5595238109429678, val_loss: 0.7474127411842346, val_acc: 0.96875
+epoch: 968: train_loss: 0.9515426579028581, train_acc: 0.5208333333333334, val_loss: 0.7503870725631714, val_acc: 0.953125
+epoch: 969: train_loss: 0.9514262764314604, train_acc: 0.5223214228947958, val_loss: 0.7204963862895966, val_acc: 0.953125
+epoch: 970: train_loss: 0.9513430264533853, train_acc: 0.4672619005044301, val_loss: 0.7782365083694458, val_acc: 0.859375
+epoch: 971: train_loss: 0.9511974422652042, train_acc: 0.5074404776096344, val_loss: 0.7476993799209595, val_acc: 0.9375
+epoch: 972: train_loss: 0.9510486226818583, train_acc: 0.5104166666666666, val_loss: 0.7334860563278198, val_acc: 0.890625
+epoch: 973: train_loss: 0.950929134451796, train_acc: 0.4851190447807312, val_loss: 0.7343842685222626, val_acc: 0.890625
+epoch: 974: train_loss: 0.9508211834410314, train_acc: 0.4851190447807312, val_loss: 0.7169810831546783, val_acc: 0.9375
+epoch: 975: train_loss: 0.950661850105869, train_acc: 0.5148809552192688, val_loss: 0.7983081936836243, val_acc: 0.828125
+epoch: 976: train_loss: 0.9505251936235753, train_acc: 0.511904756228129, val_loss: 0.7399971187114716, val_acc: 0.90625
+epoch: 977: train_loss: 0.9504232481172802, train_acc: 0.4732142885526021, val_loss: 0.7324515879154205, val_acc: 0.9375
+epoch: 978: train_loss: 0.9502734483648082, train_acc: 0.538690467675527, val_loss: 0.7439233362674713, val_acc: 0.9375
+epoch: 979: train_loss: 0.950111749038404, train_acc: 0.5416666666666666, val_loss: 0.7667924761772156, val_acc: 0.890625
+epoch: 980: train_loss: 0.9500038165483915, train_acc: 0.4717261989911397, val_loss: 0.7821797728538513, val_acc: 0.859375
+epoch: 981: train_loss: 0.949772379771431, train_acc: 0.6428571343421936, val_loss: 0.7187868356704712, val_acc: 0.9375
+epoch: 982: train_loss: 0.9496658888256073, train_acc: 0.4791666666666667, val_loss: 0.758468359708786, val_acc: 0.90625
+epoch: 983: train_loss: 0.9495226676225013, train_acc: 0.5357142885526022, val_loss: 0.7247234582901001, val_acc: 0.90625
+epoch: 984: train_loss: 0.9493990363606742, train_acc: 0.5133928656578064, val_loss: 0.7191648185253143, val_acc: 0.953125
+epoch: 985: train_loss: 0.9493251577311868, train_acc: 0.4241071442763011, val_loss: 0.7332938015460968, val_acc: 0.921875
+epoch: 986: train_loss: 0.9492133424435863, train_acc: 0.4880952338377635, val_loss: 0.7402752935886383, val_acc: 0.890625
+epoch: 987: train_loss: 0.9491178147826598, train_acc: 0.4702380994955699, val_loss: 0.7220988869667053, val_acc: 0.953125
+epoch: 988: train_loss: 0.9489976018215212, train_acc: 0.5089285671710968, val_loss: 0.7543677687644958, val_acc: 0.90625
+epoch: 989: train_loss: 0.9488615629849608, train_acc: 0.538690467675527, val_loss: 0.740543782711029, val_acc: 0.921875
+epoch: 990: train_loss: 0.948758902110277, train_acc: 0.4553571442763011, val_loss: 0.7605635225772858, val_acc: 0.875
+epoch: 991: train_loss: 0.9486465714471313, train_acc: 0.53125, val_loss: 0.7731876373291016, val_acc: 0.90625
+epoch: 992: train_loss: 0.9485768625183206, train_acc: 0.4806547562281291, val_loss: 0.7378159463405609, val_acc: 0.953125
+epoch: 993: train_loss: 0.9484340538121484, train_acc: 0.4970238109429677, val_loss: 0.8016064763069153, val_acc: 0.796875
+epoch: 994: train_loss: 0.9482991150675505, train_acc: 0.5208333333333334, val_loss: 0.7626367509365082, val_acc: 0.890625
+epoch: 995: train_loss: 0.9481372124299784, train_acc: 0.5669642885526022, val_loss: 0.7729970812797546, val_acc: 0.90625
+epoch: 996: train_loss: 0.9480452021800007, train_acc: 0.4508928656578064, val_loss: 0.7648930847644806, val_acc: 0.890625
+epoch: 997: train_loss: 0.947854529362005, train_acc: 0.5714285771052042, val_loss: 0.7146411240100861, val_acc: 0.9375
+epoch: 998: train_loss: 0.9476642807324726, train_acc: 0.5773809552192688, val_loss: 0.7367454469203949, val_acc: 0.953125
+epoch: 999: train_loss: 0.9474760943253833, train_acc: 0.5848214228947958, val_loss: 0.7290321290493011, val_acc: 0.9375
+0.9052104651927948 0.6302083432674408
+Accuracy of the network on the test images: 58%
+F1 Score: 0.515704584040747
+precision_score: 0.5135869565217391
+recall_total: 0.5892857142857143
+Accuracy for class: Alligator Cracks is 0.0 %
+F1 score: 0.0
+precision_score: 0.0
+recall_score: 0.0
+Accuracy for class: Longitudinal Cracks is 23.8 %
+F1 score: 0.3333333333333333
+precision_score: 0.25
+recall_score: 0.5
+Accuracy for class: Transverse Cracks is 93.3 %
+F1 score: 0.4606345475910693
+precision_score: 0.37051039697542537
+recall_score: 0.6086956521739131
