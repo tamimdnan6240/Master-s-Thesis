@@ -2,7 +2,7 @@
 
 # For Classification: 
 
-#### Dataset derived from the EdmCrack600. Total number of 142 images (we uploaded all folders in github, if needed download from the following link)
+#### Dataset derived from the EdmCrack600. Total number of 132 images (we uploaded all folders in github, if needed download from the following link)
 #### Link: https://drive.google.com/drive/folders/11i6iLq_KSbmxs91MaSCgtIhFTH9N2uJl?usp=sharing 
 
 #### The model was trained on 8 different epochs and 2 optimizers conditions, pretrained models in each conditions has been saved in this directory. Also,
