@@ -1,5 +1,7 @@
 # Master-s-Thesis
 
+#### Final Copy: You can download the final copy from here: https://drive.google.com/file/d/1BCM8OEez5eSvZFHCrt7a-Aro3lWjFmlm/view?usp=sharing 
+
 # For Classification: 
 
 #### Dataset derived from the EdmCrack600. Total number of 132 images (we uploaded all folders in GitHub if needed download from the following link)
